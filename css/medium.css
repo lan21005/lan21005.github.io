@@ -1,5 +1,13 @@
 @media (min-width: 32.5em) { 
 
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size: 1.2em;
+}
+
 .profilepic{
     width: 200px;
     height: auto;
@@ -8,4 +16,7 @@
     border: 2px solid black;
     margin-right: 30px;
     }
+
+
+
 }
