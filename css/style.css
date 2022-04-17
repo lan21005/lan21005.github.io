@@ -25,18 +25,16 @@ header, footer{
 }
 
 .profilepic{
-    width: 100px;
+    width: 200px;
     height: auto;
     float: right;  
     box-shadow:3px 3px black;
     border: 2px solid black;
     margin-right: 30px;
- 
-}
+ }
 
 .profilepic:hover{
     box-shadow:3px 3px coral;
-
 }
 
 h1{

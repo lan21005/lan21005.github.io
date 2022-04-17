@@ -1,9 +1,11 @@
 @media (min-width: 32.5em) { 
 
-.jonpic{float: right;
-
-}
-
-
-
+.profilepic{
+    width: 200px;
+    height: auto;
+    float: right;  
+    box-shadow:3px 3px black;
+    border: 2px solid black;
+    margin-right: 30px;
+    }
 }
