@@ -77,8 +77,8 @@ a:hover{
     color:rgb(128, 8, 54)
 }
 
-a:visited {
-    color: blue;
+footer a:visited {
+    color: whitesmoke;
 }
 
 main{
