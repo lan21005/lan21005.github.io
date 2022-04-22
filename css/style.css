@@ -26,11 +26,10 @@ header, footer{
 
 .profilepic{
     width: 200px;
-    height: auto;
-  
+    height: auto;  
     box-shadow:3px 3px black;
     border: 2px solid black;
-   
+    border-radius: 100px;   
  }
 
 .profilepic:hover{
@@ -46,22 +45,11 @@ h1{
 
 }
 
-h1:hover{
-    color: black;
-}
-
 h2{
     font-size: 1.1em;
     border-bottom: 2px solid black;
     text-align: center;
     margin-bottom: 0;
-}
-h2:hover {
-    font-weight: 500;
-    border-bottom: 2px solid #0077B6;
-    text-align: center;
-    margin-bottom: 0;
-    color: #0077B6;
 }
 
 ul {
@@ -73,11 +61,8 @@ li:hover{
     font-size: larger;
 }
 
-a:hover{
-    color:rgb(128, 8, 54)
-}
 
-footer a:visited {
+footer a:hover, footer a:visited {
     color: whitesmoke;
 }
 
