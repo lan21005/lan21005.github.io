@@ -1,0 +1,124 @@
+:root {
+    --primary-color: white;
+    --secondary-color: #827C7C;
+    }
+    
+    html {
+        background-color: var(--primary-color);
+      }
+    
+    header, footer{
+        background-color: rgba(100,50,25,1);
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+        border: black solid 2px;
+        text-align: center;
+    }
+        
+    body{
+        font-family: monospace;
+        font-size: 1rem;    
+        line-height: 2rem;
+        margin:auto;
+        padding: 0;
+    }
+        
+    main{
+        border-bottom: 2px solid black;
+        margin-left: 20px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        background-color: white;
+        border-radius: 10px;
+        border: black solid 2px;
+    }
+    
+    h1{
+        font-size: 1.5em;
+        text-align:center;
+        align-items: center;
+        padding-top: 20px;
+        padding-right: 35px;
+    
+    }
+    
+    h2{
+        font-size: 1.1em;
+        border-bottom: 2px solid black;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+    ul {
+     list-style:square; 
+     }
+    
+    li:hover{
+        font-size: larger;
+    }
+    
+    li a:visited {
+        color: blueviolet;
+    }
+    
+    footer a, footer a:visited {
+        color: whitesmoke;
+    }
+    
+    /* Hamburger button */
+nav {
+    margin: 0 auto;
+    max-width: 900px;
+  }
+  nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  nav ul li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 0.95rem;
+    background-color: #373737;
+    transition: 0.5s;
+  }
+  
+  nav ul {
+    display: none;
+  }
+  nav ul.open {
+    display: block;
+  }
+  
+  #hamburgerbtn span:nth-child(1) {
+    display: block;
+    align-items: center;
+  }
+  #hamburgerbtn span:nth-child(2) {
+    display: none;
+  }
+  
+  #hamburgerbtn.open span:nth-child(1) {
+    display: none;
+  }
+  #hamburgerbtn.open span:nth-child(2) {
+    display: block;
+  }
+  
+  nav button {
+    color: #536878;
+    background-color: #f6f1ea;
+    transition: 0.5s;
+    border: none;
+    font-size: 2rem;
+  }
+  
+  nav a:hover {
+    background-color: #f2f3ae;
+    color: #36454f;
+  }
+  
