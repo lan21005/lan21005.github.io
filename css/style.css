@@ -7,14 +7,6 @@ html {
     background-color: var(--primary-color);
   }
 
-body{
-    font-family: monospace;
-    font-size: 1rem;    
-    line-height: 2rem;
-    margin:auto;
-    padding: 0;
-}
-
 header, footer{
     background-color: rgba(100,50,25,1);
     padding: 20px;
@@ -24,16 +16,24 @@ header, footer{
     text-align: center;
 }
 
-.profilepic{
-    width: 200px;
-    height: auto;  
-    box-shadow:3px 3px black;
-    border: 2px solid black;
-    border-radius: 100px;   
- }
 
-.profilepic:hover{
-    box-shadow:3px 3px coral;
+body{
+    font-family: monospace;
+    font-size: 1rem;    
+    line-height: 2rem;
+    margin:auto;
+    padding: 0;
+}
+
+
+main{
+    border-bottom: 2px solid black;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: black solid 2px;
 }
 
 h1{
@@ -53,11 +53,10 @@ h2{
 }
 
 ul {
-    list-style: none;
-  }
+ list-style:square; 
+ }
 
 li:hover{
-    color: red;
     font-size: larger;
 }
 
@@ -69,16 +68,18 @@ footer a, footer a:visited {
     color: whitesmoke;
 }
 
-main{
-    border-bottom: 2px solid black;
-    margin-left: 20px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    background-color: white;
-    border-radius: 10px;
-    border: black solid 2px;
+.profilepic{
+    width: 200px;
+    height: auto;  
+    box-shadow:3px 3px black;
+    border: 2px solid black;
+    border-radius: 100px;   
+ }
 
+.profilepic:hover{
+    box-shadow:3px 3px coral;
 }
+
 .assignments {
     line-height: 2em;
   }
