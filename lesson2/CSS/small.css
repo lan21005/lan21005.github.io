@@ -29,7 +29,8 @@
         background-color: white;
         border-radius: 10px;
         border: black solid 2px;
-    }
+        padding: 10px;
+      }
     
     h1{
         font-size: 1.5em;
