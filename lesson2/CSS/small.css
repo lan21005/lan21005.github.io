@@ -45,7 +45,7 @@
     
     ul {
      list-style:square; 
-     }
+      }
     
     li:hover{
         font-size: larger;
@@ -74,6 +74,7 @@ nav {
     font-size: 0.95rem;
     background-color: #373737;
     transition: 0.5s;
+    
   }
   
   nav ul {
