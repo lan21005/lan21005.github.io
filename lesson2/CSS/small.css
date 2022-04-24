@@ -34,8 +34,8 @@
     
     h1{
         font-size: 1.5em;
-        text-align:center;
-        align-items: center;
+        /* text-align:center;
+        align-items: center; */
         padding-top: 20px;
         padding-right: 35px;    
     }
@@ -112,3 +112,11 @@ nav {
     color: #36454f;
   }
   
+  /* Target Audience  */
+
+  .persona_img, .site_logo {
+    border-radius: 5%;
+    border-style: double;
+    }
+  
+  }
