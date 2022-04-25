@@ -6,8 +6,9 @@ year.innerHTML = new Date().getFullYear();
 
 
 //change profile picture on click
-const profilepic = document.querySelector('#profilepic');
-profilepic.addEventListener('click', function() {
-    profilepic.src = 'images/Web_Dev.jpg';
-} 
-, false);
+function changeImage(element) {
+    var right = "images/profile.jpg";
+    var left = "images/easter_egg.jpg";
+    element.src = element.bln ? right : left;
+    element.bln = !element.bln;
+}
