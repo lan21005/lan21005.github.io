@@ -11,8 +11,8 @@ body {
 }
 
 header, footer {
-  background-color: #86c8d8;
-  color: black;
+  background-color: rgba(100,50,25,1);
+  color: white;
   border-radius: 5px;
   padding: 1em;
   text-align: center;
