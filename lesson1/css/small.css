@@ -40,9 +40,10 @@ header, footer {
   
   width: 75%;
   height: auto;
-  
+}  
 
-
+footer a, footer a:visited {
+  color: whitesmoke;
 }
 
 h1,
