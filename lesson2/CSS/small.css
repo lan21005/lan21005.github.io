@@ -34,8 +34,6 @@ main {
 
 h1 {
   font-size: 1.5em;
-  /* text-align:center;
-        align-items: center; */
   padding-top: 20px;
   padding-right: 35px;
 }
@@ -54,7 +52,10 @@ li a:visited {
   color: lightskyblue;
 }
 
+/********************/
 /* Hamburger button */
+/********************/
+
 nav {
   margin: 0 auto;
   max-width: 900px;
@@ -109,9 +110,9 @@ nav a:hover {
   background-color: #f2f3ae;
   color: #36454f;
 }
-
-/* Target Audience  */
-
+/*******************/
+/* Target Audience */
+/*******************/
 .persona_img,
 .site_logo {
   max-width: 200px;
@@ -134,6 +135,10 @@ nav a:hover {
 .p_sample {
   font-family: "Outfit", sans-serif;
 }
+
+/****************/
+/* Color Scheme */
+/****************/
 
 #header_example {
   background-color: #023e8a;
