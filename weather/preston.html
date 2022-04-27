@@ -31,19 +31,24 @@
             <div class="motto">More than just the Weather</div>
         </section>
       </header>
-
-    <nav>
-        <a id="menu-link" onclick="hamburgerMenu()">&#9776; Menu</a>
-        <ul class="menu">
-            <li><a href="coming_soon.html">Home</a></li>
-            <li id="current-page"><a href="#">Preston</a></li>
-            <li><a href="coming_soon.html">Soda Springs</a></li>
-            <li><a href="coming_soon.html">Fish Haven</a></li>
-            <li><a href="coming_soon.html">Storm Center</a></li>
-            <li><a href="coming_soon.html">Gallery</a></li>
-        </ul>
-    </nav>
-
+      <div id="header_links">
+        <div id="nav">
+          <nav>
+            <button id="hamburgerbtn">
+              <span>&#9776;</span><span>X</span>
+            </button>
+            <ul id="primarynav">
+              <li><a href="coming_soon.html">Home</a></li>
+              <li id="current-page"><a href="#">Preston</a></li>
+              <li><a href="coming_soon.html">Soda Springs</a></li>
+              <li><a href="coming_soon.html">Fish Haven</a></li>
+              <li><a href="coming_soon.html">Storm Center</a></li>
+              <li><a href="coming_soon.html">Gallery</a></li>
+            </ul>
+          </nav>
+        </div>
+        <br />
+      </div>
     <main>
         <h1>Preston, Idaho</h1>
         <br>
@@ -74,9 +79,9 @@
             <p> &#9742; Phone
                 <br>
                 &#9993; email@address.com
-            </p>
-            <div class="map"><img src="images/placeholder.webp" alt="Google Maps image of Preston, ID"></div>
-        </div>
+            </p>MAP:<br>
+                 <img class ="map"src="images/placeholder.webp" alt="Google Maps image of Preston, ID">
+           </div>
     </main>
 
 <footer>
