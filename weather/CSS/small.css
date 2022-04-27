@@ -151,9 +151,14 @@
   /* Coming Soon  */
   /****************/
   
-  #coming_soon, .logo, .map {
+  #coming_soon {
     max-width: 200px;
     border-radius: 5%;
     border-style: double;
   }
   
+  .logo, .map {
+    max-width: 200px;
+    border-radius: 5%;
+    border-style: double;
+  }
