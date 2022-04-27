@@ -146,3 +146,14 @@
     line-height: 150%;
   }
   
+
+  /****************/
+  /* Coming Soon  */
+  /****************/
+  
+  #coming_soon {
+    max-width: 200px;
+    border-radius: 5%;
+    border-style: double;
+  }
+  
