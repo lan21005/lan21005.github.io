@@ -17,23 +17,76 @@
     <link type="text/css" rel="stylesheet" href="CSS/medium.css" />
     <link type="text/css" rel="stylesheet" href="CSS/large.css" />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-    <title>Preston Idaho Weather</title>
+    <title>Atmosphere</title>
     <script defer src="js/dates.js"></script>
   </head>
 
+
   <body>
-<h1>Site Name: xxxxx</h1>
-<h2>Site Purpose:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
-</h2>
-<h3>Site URL (Domain Name): http://www.sitename.com</h3>
-<h4>Site Logo: PICTURE HERE</h4>
+    <header>
+        <img class="logo" src="images/placeholder.webp" alt="Logo">
+        <section class="headings">
+            <h1>The Atmosphere</h1>
+            <div class="motto">More than just the Weather</div>
+        </section>
+      </header>
 
-  </body>
-<hr>
-    <footer>
-        <p>
-        &copy;<span id="year"></span> .:|:. Jon Lanenga .:|:. Idaho .:|:.
-        <a href="https://www.byui.edu/online">BYUI Online Learning</a>
-        </p>
-        <p id="lastmod">Last modified</p>
+    <nav>
+        <a id="menu-link" onclick="hamburgerMenu()">&#9776; Menu</a>
+        <ul class="menu">
+            <li><a href="coming_soon.html">Home</a></li>
+            <li id="current-page"><a href="#">Preston</a></li>
+            <li><a href="coming_soon.html">Soda Springs</a></li>
+            <li><a href="coming_soon.html">Fish Haven</a></li>
+            <li><a href="coming_soon.html">Storm Center</a></li>
+            <li><a href="coming_soon.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Preston, Idaho</h1>
+        <br>
+            <div class="weather-summary">
+                <h2>Weather Summary</h2>
+            <p>Temperature: <br> Precipitation: <br> Clouds: </p>
+            </div>
+
+        <br>
+        <div class="fiveDayForecast">
+            <h3>5 Day Forecast</h3>
+            <p>Day 1</p>
+            <p>Day 2</p>
+            <p>Day 3</p>
+            <p>Day 4</p>
+            <p>Day 5</p>
+            <div>
+        <br>
+        <article>
+            <h2>Title of Article</h2>
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, incidunt. Perferendis maxime et enim quas expedita nulla dolorem illum minima autem, earum repudiandae soluta delectus, nostrum sit exercitationem hic quos.</p>
+        </article>
+        <br>
+        <div class="contact">
+            <p>The Atmosphere
+                <br>Address
+                <br>City, State ZIP CODE</p>
+            <p> &#9742; Phone
+                <br>
+                &#9993; email@address.com
+            </p>
+            <div class="map"><img src="images/placeholder.webp" alt="Google Maps image of Preston, ID"></div>
+        </div>
+    </main>
+
+<footer>
+  <p>
+    &copy;<span id="year"></span> .:|:.
+    <a href="https://lan21005.github.io/">Jon Lanenga</a> .:|:. Maryland
+    .:|:.
+    <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+  </p>
+  <p id="lastmod">Last modified</p>
+</footer>
+</body>
+</html>
