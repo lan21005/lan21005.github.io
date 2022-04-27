@@ -116,14 +116,12 @@ nav a:hover {
 .persona_img,
 .site_logo {
   max-width: 200px;
-  max-height: auto;
   border-radius: 5%;
   border-style: double;
 }
 
 #color_scheme {
   max-width: 100%;
-  max-height: auto;
   border-radius: 5%;
   border-style: double;
 }
