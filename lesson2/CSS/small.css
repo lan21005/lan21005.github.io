@@ -131,3 +131,28 @@ nav {
     .p_sample {
       font-family: 'Outfit', sans-serif;
     }
+
+    #header_example{
+      background-color: #023E8A;
+      color: white;
+      overflow: hidden;
+      font-size: 2rem;
+      line-height: 150%;
+
+    }
+    
+    #background_example{
+      background-color: #CAF0F8;
+      color: black;
+      overflow: hidden;
+      font-size: 2rem;
+      line-height: 150%;    
+    }
+    
+    #accent_example{
+      background-color: #00B4D8;
+      color: black;
+      overflow: hidden;
+      font-size: 2rem;
+      line-height: 150%;
+    }
