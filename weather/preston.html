@@ -20,21 +20,18 @@
     <title>Atmosphere</title>
     <script defer src="js/dates.js"></script>
   </head>
-
-
   <body>
-
     <header>
-        <img class="logo" src="images/placeholder.webp" alt="Logo">
-        <section class="headings">
-            <h1>The Atmosphere</h1>
-            <div class="motto">More than just the Weather</div>
-        </section>
-      </header>
+      <div class="headings">
+      <img class="logo" src="images/logo.webp" alt="Logo">
+                 <h1>The Atmosphere<br>
+            <span class="motto">More than just the Weather</span></h1>
+        </div>
+    
+    <nav>
       <div id="header_links">
         <div id="nav">
-          <nav>
-            <button id="hamburgerbtn">
+                      <button id="hamburgerbtn">
               <span>&#9776;</span><span>X</span>
             </button>
             <ul id="primarynav">
@@ -45,34 +42,40 @@
               <li><a href="coming_soon.html">Storm Center</a></li>
               <li><a href="coming_soon.html">Gallery</a></li>
             </ul>
-          </nav>
         </div>
-        <br />
       </div>
+    </nav>
+    </header> 
     <main>
-        <h1>Preston, Idaho</h1>
+        <h2 class="cityname">Preston, Idaho</h2>
+        <div>
         <br>
-            <div class="weather-summary">
+            <div class="contentbox">
                 <h2>Weather Summary</h2>
             <p>Temperature: <br> Precipitation: <br> Clouds: </p>
             </div>
-
+          </div>
         <br>
-        <div class="fiveDayForecast">
-            <h3>5 Day Forecast</h3>
+        <div>
+        <div class="contentbox">
+            <h2>5 Day Forecast</h2>
             <p>Day 1</p>
             <p>Day 2</p>
             <p>Day 3</p>
             <p>Day 4</p>
             <p>Day 5</p>
-            <div>
+          </div>
         <br>
+        </div>
+        <div class="contentbox">
         <article>
             <h2>Title of Article</h2>
             <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, incidunt. Perferendis maxime et enim quas expedita nulla dolorem illum minima autem, earum repudiandae soluta delectus, nostrum sit exercitationem hic quos.</p>
         </article>
+        </div>
         <br>
-        <div class="contact">
+        <div class="contentbox">
+          <h2>Contact</h2>
             <p>The Atmosphere
                 <br>Address
                 <br>City, State ZIP CODE</p>

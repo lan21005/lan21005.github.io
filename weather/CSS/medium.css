@@ -1,20 +1,19 @@
 @media only screen and (min-width: 42rem) {
-    nav button {
-      display: none;
+
+    .contentbox{
+      background-color: lightblue;
+
     }
   
-    nav ul#primarynav {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr;
-      font-size: 0.8rem;
-      padding: 10px;
+    .logo{
+      max-width: 250px;
     }
   
-    nav ul li a {
-      border: none;
-      border-right: 1px solid rgba(0, 0, 0, 0);
-    }
+  
+  
+  
+  
+  
   }
   
   

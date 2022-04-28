@@ -1,0 +1,31 @@
+@media only screen and (min-width: 65rem) {
+
+
+nav button {
+    display: none;
+  }
+
+  nav ul#primarynav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0);
+  }
+
+  .logo{
+    max-width: 350px;
+  }
+
+.contentbox{
+  background-color: #fff6f6 ;
+}
+
+
+
+}
