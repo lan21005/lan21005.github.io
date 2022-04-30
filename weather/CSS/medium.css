@@ -1,19 +1,9 @@
 @media only screen and (min-width: 42rem) {
-
-    .contentbox{
-      background-color: lightblue;
-
-    }
-  
-    .logo{
-      max-width: 250px;
-    }
-  
-  
-  
-  
-  
-  
+  .contentbox {
+    background-color: lightblue;
   }
-  
-  
+
+  .logo {
+    max-width: 250px;
+  }
+}

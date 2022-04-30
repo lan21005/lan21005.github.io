@@ -1,7 +1,5 @@
 @media only screen and (min-width: 65rem) {
-
-
-nav button {
+  nav button {
     display: none;
   }
 
@@ -18,14 +16,11 @@ nav button {
     border-right: 1px solid rgba(0, 0, 0, 0);
   }
 
-  .logo{
+  .logo {
     max-width: 350px;
   }
 
-.contentbox{
-  background-color: #fff6f6 ;
-}
-
-
-
+  .contentbox {
+    background-color: #fff6f6;
+  }
 }
