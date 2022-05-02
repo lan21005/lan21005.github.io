@@ -85,6 +85,13 @@ li a:visited {
   color: lightskyblue;
 }
 
+nav a.current_page,
+nav a:active {
+  background-color: var(--main-color);
+  box-shadow: 0 0 10px var(--main-color);
+  z-index: 9;
+}
+
 /********************/
 /* Hamburger button */
 /********************/
