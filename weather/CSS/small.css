@@ -67,13 +67,12 @@ h6 {
 
 .hero, .forecast, .article, .contact {
   display: block;
-  border: 1px dashed black;
+  border-style: double;
   margin: 10px auto;
   padding: 10px;
   background-color: #eee;
   color: #444;
   font-style: oblique;
-
 }
 
 #banner {
@@ -103,12 +102,12 @@ nav a:active {
 }
 
 .article_img {
-/* responsive image sizing for .article_img */
   max-width: 100%;
   height: auto;
   overflow: hidden;
   border-style: double;
   align-content: center;
+  text-align: center;
 }
 
 table {
@@ -118,6 +117,10 @@ table {
   color: black;
   max-width: 100%;
   height: auto;
+  overflow: hidden;
+  border-style: double;
+  align-content: center;
+  text-align: center;
 }
 
 
@@ -136,26 +139,37 @@ td {
 }
 section.overview {
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 3fr 2fr 2fr;
+  color: black;
+  padding-left: 15px;
 }
 section.overview h4 {
-  grid-column: span 2;
+  grid-column: span 3;
   margin-bottom: 0;
   text-align: center;
 }
-section.overview span {
-  font-size: 13px;
-  text-align: right;
-  font-weight: bold;
+
+div.hero {
+  z-index: 1;
+  position: relative;
+  min-height: 250px;
+  background-image: url("../images/wdd230_image_franklinOriginal.webp");
+  background-size: cover;
+  background-position: left bottom;
+  overflow: hidden;
+  border-style: double;
 }
 
-section.overview span.colored {
-  text-align: left;
-  padding-left: 5px;
-  color: var(--main-color);
+div.hero section {
+  top: 20px;
+  left: 20px;
+  width: 325px;
+  position: absolute;
+  height: calc(100% - 40px);
+  background: rgba(255,255,255,0.3);
+  background-image: linear-gradient(-160deg, rgba(255,255,255,0.4) 35%, rgba(100,100,100,0.9));
+  border-style: double ;
 }
-
-
 
 /********************/
 /* Hamburger button */
@@ -165,6 +179,7 @@ nav {
   margin: 0 auto;
   max-width: 900px;
 }
+
 nav ul {
   list-style-type: none;
   overflow: hidden;
