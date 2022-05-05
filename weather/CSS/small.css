@@ -110,6 +110,15 @@ nav a:active {
   text-align: center;
 }
 
+.weather_img {
+  max-width: 10%;
+  height: auto;
+  overflow: hidden;
+  border-style: double;
+  align-content: center;
+  text-align: center;
+}
+
 table {
   background-color: lightgrey;
   margin: 1rem;
