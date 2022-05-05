@@ -6,6 +6,14 @@ const year = document.querySelector("#year");
 year.innerHTML = new Date().getFullYear();
 
 const d = new Date();
+//Display date in long format Weekday, Month Day, Year
+const date = document.querySelector("#date");
+date.textContent = d.toLocaleDateString("en-US", {
+  weekday: "long",
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+});
 document.getElementById("current_date").innerHTML = d.toDateString();
 
 //Display current day as: Monday, 3 March 2022
