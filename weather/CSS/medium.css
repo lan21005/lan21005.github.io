@@ -1,9 +1,41 @@
 @media only screen and (min-width: 42rem) {
-  .contentbox {
+  .hero, .forecast, .article, .contact {
     background-color: lightblue;
   }
 
   .logo {
     max-width: 250px;
   }
+
+  .forecast {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: lightskyblue;
+    position: relative;
+    width: 35rem;
+    margin: auto;
+  }
+  
+  table {
+    background-color: lightgrey;
+    margin: 1rem;
+    border: solid black ;
+    color: black;
+  }
+  
+  th {
+    background-color: lightgreen;
+    color: #FFF;
+    padding: 1.5rem;
+    font-size: 1rem;
+    border:solid black .1rem;
+  }
+  
+  td {
+    border: dashed black .1rem; 
+    padding: .2rem;
+   
+  }
+
 }

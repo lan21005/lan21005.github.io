@@ -8,6 +8,32 @@ year.innerHTML = new Date().getFullYear();
 const d = new Date();
 document.getElementById("current_date").innerHTML = d.toDateString();
 
+//Display current day as: Monday, 3 March 2022
+const days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
+
 // Hamburger Button //
 /*Button css*/
 function toggleMenu() {

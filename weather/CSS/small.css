@@ -65,15 +65,25 @@ h6 {
   text-align: center;
 }
 
-.contentbox {
+.hero, .forecast, .article, .contact {
   display: block;
   border: 1px dashed black;
   margin: 10px auto;
   padding: 10px;
   background-color: #eee;
   color: #444;
-  font-style: italic;
+  font-style: oblique;
+
 }
+
+#banner {
+  background-color: yellow;
+  color:#023e8a;
+  font-size: 1.5em;
+  padding: 10px;
+  text-align: center;
+  font-family: "Mukta", sans-serif;
+  }
 
 ul {
   list-style: square;
@@ -91,6 +101,61 @@ nav a:active {
   box-shadow: 0 0 10px var(--main-color);
   z-index: 9;
 }
+
+.article_img {
+/* responsive image sizing for .article_img */
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-style: double;
+  align-content: center;
+}
+
+table {
+  background-color: lightgrey;
+  margin: 1rem;
+  border: solid black ;
+  color: black;
+  max-width: 100%;
+  height: auto;
+}
+
+
+th {
+  background-color: lightgreen;
+  color: #FFF;
+  padding: 1.5rem;
+  font-size: 1rem;
+  border:solid black .1rem;
+}
+
+td {
+  border: dashed black .1rem; 
+  padding: .2rem;
+ 
+}
+section.overview {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+section.overview h4 {
+  grid-column: span 2;
+  margin-bottom: 0;
+  text-align: center;
+}
+section.overview span {
+  font-size: 13px;
+  text-align: right;
+  font-weight: bold;
+}
+
+section.overview span.colored {
+  text-align: left;
+  padding-left: 5px;
+  color: var(--main-color);
+}
+
+
 
 /********************/
 /* Hamburger button */
@@ -163,7 +228,7 @@ nav a:hover {
 
 .logo,
 .map {
-  max-width: 150px;
+  max-width: 300px;
   border-radius: 5%;
   border-style: double;
 }

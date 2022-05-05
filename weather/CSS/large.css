@@ -1,4 +1,9 @@
 @media only screen and (min-width: 65rem) {
+
+  body{
+  max-width: 1400px;
+}
+
   nav button {
     display: none;
   }
@@ -20,7 +25,7 @@
     max-width: 350px;
   }
 
-  .contentbox {
+  .hero, .forecast, .article, .contact {
     background-color: #fff6f6;
   }
 }
