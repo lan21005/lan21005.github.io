@@ -94,12 +94,12 @@ li a:visited {
   color: lightskyblue;
 }
 
-nav a.current_page,
-nav a:active {
-  background-color: var(--main-color);
-  box-shadow: 0 0 10px var(--main-color);
-  z-index: 9;
-}
+#primarynav a#current-page {
+  background-color: #f2f3ae;
+  color: red;
+  box-shadow: 0 0 10px var(--main-color); }
+
+
 
 .article_img {
   max-width: 100%;
