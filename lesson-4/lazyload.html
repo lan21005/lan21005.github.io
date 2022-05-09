@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WDD 230, Lesson4: Lazy Image Loader"
+    />
+    <meta name="author" content="Jon Lanenga" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <title>Lazy Load</title>
+    <script defer src="js/javascript.js"></script>
+  </head>
+  <body>
+    <h1>Lazy Image Loader</h1>
+    <picture>
+      <img
+        src="images/placeholder.png"
+        data-src="https://images.unsplash.com/photo-1642436381322-27d63dd9912f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+        width="300"
+        height="400"
+        alt="laptop"
+      />
+    </picture>
+    <picture>
+      <img
+        src="images/placeholder.png"
+        width="300"
+        height="400"
+        data-src="https://images.unsplash.com/photo-1642451642527-d24409e62e21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+        alt="windmill"
+      />
+    </picture>
+    <picture>
+      <img
+        src="images/placeholder.png"
+        data-src="https://images.unsplash.com/photo-1623349534100-c7e9579ee4f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=646&q=80"
+        alt="antenna"
+        loading="lazy"
+        width="300"
+        height="400"
+      />
+    </picture>
+    <picture>
+      <img
+        src="images/placeholder.png"
+        data-src="https://images.unsplash.com/photo-1453683685760-b8db0bbb8dc2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+        alt="military dog tags"
+        loading="lazy"
+        width="300"
+        height="400"
+      />
+    </picture>
+    <picture>
+      <img
+        src="images/placeholder.png"
+        data-src="https://images.unsplash.com/photo-1501789605990-988ca86e9ff3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+        alt="fallen soldiers memorial"
+        loading="lazy"
+        width="300"
+        height="400"
+      />
+    </picture>
+    <picture>
+      <img
+        src="images/placeholder.png"
+        data-src="https://images.unsplash.com/photo-1492217072584-7ff26c10eb75?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+        alt="statue of liberty"
+        loading="lazy"
+        width="300"
+        height="400"
+      />
+    </picture>
+  </body>
+</html>

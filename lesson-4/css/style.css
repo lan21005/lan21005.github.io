@@ -1,0 +1,20 @@
+img[data-src] {
+  min-width: 50px;
+  min-height: 50px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+  
+img[data-src] {
+  filter: blur(0.5em);
+}
+  
+img {
+  filter: blur(0em);
+  transition: filter .8s;
+  border-style: double;
+}
