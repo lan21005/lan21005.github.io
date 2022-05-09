@@ -23,3 +23,6 @@ if ('IntersectionObserver' in window) {
     loadImages(img);
   });
 }
+
+const lastmod = document.querySelector('#lastmod')
+lastmod.textContent = `Last Updated: ${document.lastModified}`;

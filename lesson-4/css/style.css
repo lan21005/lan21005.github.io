@@ -1,3 +1,45 @@
+:root {
+--primary-color: white;
+--secondary-color: #827C7C;
+
+}
+
+
+html {
+  background-color: var(--primary-color);
+}
+
+header, footer{
+    background-color: rgba(100,50,25,1);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    border: black solid 2px;
+    text-align: center;
+}  
+  
+main{
+    border-bottom: 2px solid black;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: black solid 2px;
+}
+
+h1{
+    font-size: 1.5em;
+    text-align:center;
+    align-items: center;
+    padding-top: 20px;
+    padding-right: 35px;
+}
+
+footer a, footer a:visited {
+  color: whitesmoke;
+}
+
 img[data-src] {
   min-width: 50px;
   min-height: 50px;
