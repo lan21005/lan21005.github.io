@@ -279,15 +279,6 @@ border-style: double;
   align-content: center;
   text-align: center;
   background-color: grey;
-
-/****************/
-/* Coming Soon  */
-/****************/
-
-#coming_soon {
-  max-width: 95%;
-  border-radius: 5%;
-  border-style: double;
 }
 
 .logo,
@@ -296,10 +287,3 @@ border-style: double;
   border-radius: 5%;
   border-style: double;
 }
-
-.work {
-  text-align: center;
-  background-color: lightgoldenrodyellow;
-}
-
-
