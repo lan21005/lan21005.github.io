@@ -29,3 +29,22 @@
     background-color: #fff6f6;
   }
 }
+
+.gallery {
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   background-color: grey;
+ }
+ 
+ .gallery picture {
+ justify-self: center;
+ padding: 1rem;
+ }
+ 
+ picture img {
+ width: 95%;
+ border-style: double;
+ }
+ 
+ picture:hover {box-shadow: 0 0 50px lightyellow;}
+ 

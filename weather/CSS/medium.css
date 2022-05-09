@@ -1,4 +1,5 @@
-@media only screen and (min-width: 42rem) {
+@media only screen and (min-width: 42rem)
+{
   .hero, .forecast, .article, .contact {
     background-color: lightblue;
   }
@@ -6,6 +7,29 @@
   .logo {
     max-width: 250px;
   }
+
+  .gallery {
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    background-color: blueviolet;
+     padding: 1rem;
+     margin: auto;
+     text-align: left !important;
+     border: solid black 1px; 
+  }
+  
+ 
+  picture img {
+  width: 95%;
+  border-style: double;
+  }
+  
+  picture:hover {box-shadow: 0 0 50px lightyellow;}
+  
+
+
 
   .forecast {
     display: flex;
@@ -37,5 +61,6 @@
     padding: .2rem;
    
   }
+
 
 }

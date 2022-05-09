@@ -240,6 +240,27 @@ nav a:hover {
   color: #36454f;
 }
 
+
+.gallery {
+  margin-bottom: 1rem;
+  display: block;
+   padding: 1rem;
+   margin: auto;
+   text-align: left !important;
+   border: solid black 1px; 
+}
+
+.gallery picture {
+justify-self: center;
+padding: 1rem;
+}
+
+picture img {
+width: 75%;
+border-style: double;
+}
+
+
 /****************/
 /* Coming Soon  */
 /****************/
@@ -261,3 +282,5 @@ nav a:hover {
   text-align: center;
   background-color: lightgoldenrodyellow;
 }
+
+
