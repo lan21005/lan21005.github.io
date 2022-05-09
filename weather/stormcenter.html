@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Weather site Gallery Page"
+    />
+    <meta name="author" content="Jon Lanenga" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cutive+Mono&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link type="text/css" rel="stylesheet" href="CSS/small.css" />
+    <link type="text/css" rel="stylesheet" href="CSS/medium.css" />
+    <link type="text/css" rel="stylesheet" href="CSS/large.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <title>Atmosphere</title>
+    <script defer src="js/dates.js"></script>
+    <script defer src="js/windchill.js"></script>
+    <script defer src="js/lazyload.js"></script>
+  </head>
+  <body>
+    <p id="banner"></p>
+    <header>
+      <div class="headings">
+        <img class="logo" src="images/logo.webp" alt="Logo" />
+        <h1>
+          The Atmosphere<br />
+          <span class="motto">More than just the Weather</span>
+        </h1>
+      </div>
+
+      <nav>
+        <div id="header_links">
+          <div id="nav">
+            <button id="hamburgerbtn">
+              <span>&#9776;</span><span>X</span>
+            </button>
+            <ul id="primarynav">
+              <li><a href="coming_soon.html">Home</a></li>
+              <li><a href="/weather/preston.html">Preston</a></li>
+              <li><a href="coming_soon.html">Soda Springs</a></li>
+              <li><a href="coming_soon.html">Fish Haven</a></li>
+              <li><a id="current-page" href="/weather/stormcenter.html">Storm Center</a></li>
+              <li><a href="gallery-7.html">Gallery</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <h1>Storm Center</h1>
+        <form action="thanks.html">
+            <div class="form-wrap">
+                <h2>Contact Information</h2>
+
+                <div class="formblock">
+                    <label for="name">Full Name*:</label>
+                    <input type="text" id="name" name="name" minlength="5" maxlength="50" size="20" required
+                        pattern="[A-Z][A-Za-z' -]+">
+                </div>
+                <br>
+                <div class="formblock">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="email@domain.com" size="20">
+                </div>
+                <br>
+                <div class="formblock">
+                    <label for="phone">Phone*:</label>
+                    <input type="tel" id="phone" name="tel" required minlength="10" size="20">
+                </div>
+                <br>
+                <div class="formblock">
+                    <label for="zip">ZIP*:</label>
+                    <input type="number" id="zip" name="zip" required size="5">
+                </div>
+
+                <h2>Storm Report</h2>
+                <div class="formblock">
+                    <label for="date">Storm Date:</label>
+                    <input type="date" id="date" name="date" size="5">
+                </div>
+                <br>
+                <div class="formblock">
+                    <label for="type">Storm Type:</label>
+                    <input list="storm-type" id="type" name="type">
+                    <datalist id="storm-type">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                        <option value="Other">
+                    </datalist>
+                </div>
+                <br>
+                <div>
+                    <label for="rating">Severity (1 to 10):</label>
+                    <input type="range" id="rating" value="1" min="1" max="10" step="1"
+                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">1</span>
+                </div>
+                <br>
+                <div class="formblock">
+                    <label for="region">Region:</label>
+                    <select id="region">
+                        <option selected disabled>Select Region...</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodasprings">Soda Springs</option>
+                        <option value="fishhaven">Fish Haven</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <h2>Are you in danger?</h2>
+                </div>
+                <div class="radio">
+                    <div class="radio.button">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="yes" name="danger" value="yes" checked>
+                    </div>
+
+                    <div class="radio.button">
+                        <label for="maybe">Maybe</label>
+                        <input type="radio" id="maybe" name="danger" value="maybe">
+                    </div>
+
+                    <div class="radio.button">
+                        <label for="no">No</label>
+                        <input type="radio" id="no" name="danger" value="no">
+                    </div>
+                </div>
+                <br>
+                <div class="formblock"> <strong>Additional Comments or Details (max 500 characters):</strong><br>
+                    <textarea id="styled" name="message" maxlength="750"></textarea>
+                </div>
+            </div>
+            <br>
+            <input type="submit" value="Send Storm Report">
+        </form>
+    </main>
+
+    <footer>
+      <p>
+        &copy;<span id="year"></span> .:|:.
+        <a href="https://lan21005.github.io/">Jon Lanenga</a> .:|:. Maryland
+        .:|:.
+        <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+      </p>
+      <p>The current date is: <span id="current_date"></span></p>
+      <p id="lastmod">Last modified</p>
+    </footer>
+  </body>
+</html>

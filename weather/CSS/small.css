@@ -261,6 +261,25 @@ border-style: double;
 }
 
 
+#stormcenter_thanks, #received_thanks {
+  display: block;
+  margin: auto;
+  align-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Mukta", sans-serif;
+  }
+
+#danger {
+  color: red;
+  font-size: 1.5rem;
+  font-family: "Mukta", sans-serif;
+  display: block;
+  margin: auto;
+  align-content: center;
+  text-align: center;
+  background-color: grey;
+
 /****************/
 /* Coming Soon  */
 /****************/
