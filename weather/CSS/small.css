@@ -248,6 +248,8 @@ nav a:hover {
    margin: auto;
    text-align: left !important;
    border: solid black 1px; 
+   background-color: grey;
+
 }
 
 .gallery picture {

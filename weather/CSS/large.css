@@ -28,12 +28,11 @@
   .hero, .forecast, .article, .contact {
     background-color: #fff6f6;
   }
-}
+
 
 .gallery {
    grid-template-columns: 1fr 1fr 1fr;
    grid-template-rows: 1fr 1fr 1fr;
-   background-color: grey;
  }
  
  .gallery picture {
@@ -48,3 +47,4 @@
  
  picture:hover {box-shadow: 0 0 50px lightyellow;}
  
+}
