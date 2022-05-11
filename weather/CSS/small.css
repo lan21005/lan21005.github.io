@@ -248,14 +248,22 @@ nav a:hover {
    margin: auto;
    text-align: left !important;
    border: solid black 1px; 
-   background-color: grey;
+   background-color: lightgrey;
+}
 
+figcaption {
+  font-size: 0.75rem;
+  text-align: center;
+  background-color: white;
+  border-style: double;
+  margin: 5px;
 }
 
 .gallery picture {
 justify-self: center;
 padding: 1rem;
 }
+
 
 picture img {
 width: 75%;
