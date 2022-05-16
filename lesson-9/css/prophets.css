@@ -62,7 +62,7 @@ footer{
 
 
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1200px) {
     .cards{
         grid-template-columns:1fr 1fr;
     }
