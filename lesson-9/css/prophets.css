@@ -1,0 +1,75 @@
+:root {
+    --primary-color: white;
+    --secondary-color: #827C7C;
+    
+    }
+    
+    
+    html {
+      background-color: var(--primary-color);
+    }
+    
+header, footer{
+    background-color: rgba(100,50,25,1);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    border: black solid 2px;
+    text-align: center;
+    }  
+
+footer a, footer a:visited {
+    color: whitesmoke;
+    }
+          
+h1{
+    text-align: center;
+    color: white;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin: 2em;
+}
+section {
+    text-align: center;
+    background-color: lightgrey;
+    border: 2px solid black;
+    border-radius: 15px;
+    }
+    
+
+p {
+    margin: 0;
+}
+img {
+    margin: .75em;
+    max-width: 250px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-style: double;
+    border-radius: 15px;
+}
+
+section:hover, img:hover {
+    box-shadow: 6px 6px 6px 6px lightgoldenrodyellow, 0 6px 20px 0 lightgoldenrodyellow;
+
+}
+
+footer{
+    margin-bottom: 10px;
+}
+
+
+
+@media only screen and (max-width: 1150px) {
+    .cards{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .cards{
+        grid-template-columns:1fr;
+    }
+}
