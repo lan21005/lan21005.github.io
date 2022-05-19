@@ -264,12 +264,10 @@ justify-self: center;
 padding: 1rem;
 }
 
-
 picture img {
 width: 75%;
 border-style: double;
 }
-
 
 #stormcenter_thanks, #received_thanks {
   display: block;
@@ -281,14 +279,14 @@ border-style: double;
   }
 
 #danger {
-  color: red;
+  color: white;
   font-size: 1.5rem;
   font-family: "Mukta", sans-serif;
   display: block;
   margin: auto;
   align-content: center;
   text-align: center;
-  background-color: grey;
+  background-color: rgb(200, 0, 250);
 }
 
 .logo,
@@ -297,3 +295,45 @@ border-style: double;
   border-radius: 5%;
   border-style: double;
 }
+
+/* Index */
+.home-content-wrap {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 15px;
+  display: grid;
+  grid-template-areas: 
+   'item2 item2 item2'
+   'item3 item3 item3'
+   'item4 item4 item4';
+   grid-gap: 15px;
+  }
+  
+  .item2 { 
+    grid-area: item2; 
+  
+  }
+  .item3 { 
+  grid-area: item3; 
+  
+  }
+  .item4 { 
+  grid-area: item4; 
+  }
+  
+  iframe {
+  width: 95%;
+  height: 30rem;
+  border: none;
+  }
+  
+  .town-data {
+  background-color: #5995ED;
+  padding: 1rem;
+  border-radius: 25px;
+  }
+  
+  .town-data img {
+  max-width: 85%;
+  box-shadow: 1rem 1rem .5rem #044389;
+  }
