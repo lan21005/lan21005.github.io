@@ -20,10 +20,65 @@
     <title>Atmosphere</title>
     <script defer src="js/dates.js"></script>
     <script defer src="js/windchill.js"></script>
+    <script defer src="scripts/towndata.js"></script>
   </head>
 <body>
     <main>
-
+        <div class="home-content-wrap">
+            <div class="item1">
+                <iframe src="https://www.google.org/crisismap/weather_and_events?hl=en&llbox=43.166%2C41.94%2C-110.862%2C-114.625&t=ROADMAP&layers=30%2C1%2C31%2C32%2C1340721332252%3A49%2C20%2C12%2Clayer9%2C2%2Clayer1%2C3%3A100"></iframe>
+            </div>
+            <div class="advisory">
+                <h2>Live Map</h2>
+                <h3>Provided by Google</h3>
+                <p>Please be advised of local weather conditions.</p>
+                <p>Use the Layers tab to filter map for clouds, percipitation, and storm information.</p>
+            </div>
+             <div class="item2 town-data">
+               <img src="images/preston.jpg" alt="The City of Preston, ID">
+             </div>
+             <div class="item3 town-data">
+                <img src="images/sodasprings.jpg" alt="Bear Lake, near Soda Springs, ID">
+             </div>
+             <div class="item4 town-data">
+                <img src="images/fishhaven.jpg" alt="The City of Preston, ID">
+             </div>
+        </div>
+    
+        <br>
+    <h1>Gallery Spotlight</h1>
+    
+    <div class="spotlight">
+      <span class="prev" onclick="plusSlides(-1)">&#9664;</span> <span class="next" onclick="plusSlides(1)">&#9654;</span>
+      
+      <div class="image-subtitle-wrap">
+          <div class="mySlides fade">  
+            <img src="images/gallery-images/summer-789974_960_720.jpg" alt="Summer sunset over the prairie">
+            <br>
+            <strong>Sunset by Joe Schmoe</strong>
+          </div>
+                                     
+         <div class="mySlides fade">  
+            <img src="images/gallery-images/hill-2165759_960_720.jpg" alt="Rolling brown hills in the countryside">
+            <br>
+            <strong>Countryside by by John Doe</strong>
+         </div>
+                                     
+         <div class="mySlides fade">  
+            <img src="images/gallery-images/frozen-201495_960_720.jpg" alt="Frozen red berries in the winter">
+            <br>
+            <strong>Frozen Berries by Phil Foto</strong>
+         </div>
+    </div>
+      <br>
+      <button onclick="window.location.href = 'gallery-9.html'">Gallery</button>
+    </div>
+    <br>
+    <div class="button-box">
+         <span class="dot" onclick="currentSlide(1)"></span> 
+         <span class="dot" onclick="currentSlide(2)"></span> 
+         <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
 
 
 
