@@ -32,8 +32,3 @@ if (day == 5) {
 } else {
   banner.style.display = "none";
 }
-
-
-function adjustRating(rating) {
-  document.getElementById("ratingvalue").innerHTML = rating;
-}
