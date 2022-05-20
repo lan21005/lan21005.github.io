@@ -19,23 +19,23 @@ function townPreston(jsonObj) {
 var towns = jsonObj['towns']
 
 var townName = document.createElement('h2');
-townName.textContent = towns[4].name;
+townName.textContent = towns[6].name;
 preston.appendChild(townName);
 
 var townMotto = document.createElement('h3');
-townMotto.textContent = '"' + towns[4].motto + '"';
+townMotto.textContent = '"' + towns[6].motto + '"';
 preston.appendChild(townMotto);
 
 var townFound = document.createElement('h4');
-townFound.textContent = 'Founded: ' + towns[4].yearFounded;
+townFound.textContent = 'Founded: ' + towns[6].yearFounded;
 preston.appendChild(townFound);
 
 var townPop = document.createElement('h4');
-townPop.textContent = 'Population: ' + towns[4].currentPopulation;
+townPop.textContent = 'Population: ' + towns[6].currentPopulation;
 preston.appendChild(townPop);
 
 var townRain = document.createElement('h4');
-townRain.textContent = 'Average Precipitation: ' + towns[4].averageRainfall + '"';
+townRain.textContent = 'Average Precipitation: ' + towns[6].averageRainfall + '"';
 preston.appendChild(townRain);
 }
 
@@ -44,23 +44,23 @@ function townSodaSprings(jsonObj) {
 var towns = jsonObj['towns']
 
 var townName = document.createElement('h2');
-townName.textContent = towns[5].name;
+townName.textContent = towns[0].name;
 sodasprings.appendChild(townName);
 
 var townMotto = document.createElement('h3');
-townMotto.textContent = '"' + towns[5].motto + '"';
+townMotto.textContent = '"' + towns[0].motto + '"';
 sodasprings.appendChild(townMotto);
 
 var townFound = document.createElement('h4');
-townFound.textContent = 'Founded: ' + towns[5].yearFounded;
+townFound.textContent = 'Founded: ' + towns[0].yearFounded;
 sodasprings.appendChild(townFound);
 
 var townPop = document.createElement('h4');
-townPop.textContent = 'Population: ' + towns[5].currentPopulation;
+townPop.textContent = 'Population: ' + towns[0].currentPopulation;
 sodasprings.appendChild(townPop);
 
 var townRain = document.createElement('h4');
-townRain.textContent = 'Average Precipitation: ' + towns[5].averageRainfall + '"';
+townRain.textContent = 'Average Precipitation: ' + towns[0].averageRainfall + '"';
 sodasprings.appendChild(townRain);
 }
 
@@ -73,18 +73,18 @@ townName.textContent = towns[1].name;
 fishhaven.appendChild(townName);
 
 var townMotto = document.createElement('h3');
-townMotto.textContent = '"' + towns[1].motto + '"';
+townMotto.textContent = '"' + towns[2].motto + '"';
 fishhaven.appendChild(townMotto);
 
 var townFound = document.createElement('h4');
-townFound.textContent = 'Founded: ' + towns[1].yearFounded;
+townFound.textContent = 'Founded: ' + towns[2].yearFounded;
 fishhaven.appendChild(townFound);
 
 var townPop = document.createElement('h4');
-townPop.textContent = 'Population: ' + towns[1].currentPopulation;
+townPop.textContent = 'Population: ' + towns[2].currentPopulation;
 fishhaven.appendChild(townPop);
 
 var townRain = document.createElement('h4');
-townRain.textContent = 'Average Precipitation: ' + towns[1].averageRainfall + '"';
+townRain.textContent = 'Average Precipitation: ' + towns[2].averageRainfall + '"';
 fishhaven.appendChild(townRain);
 }
