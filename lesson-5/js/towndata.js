@@ -69,7 +69,7 @@ function townFishHaven(jsonObj) {
 var towns = jsonObj['towns']
 
 var townName = document.createElement('h2');
-townName.textContent = towns[1].name;
+townName.textContent = towns[2].name;
 fishhaven.appendChild(townName);
 
 var townMotto = document.createElement('h3');
