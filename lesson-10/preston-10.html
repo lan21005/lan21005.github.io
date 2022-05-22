@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Assignment portal for Jon Lanenga in WDD 230: Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <meta name="author" content="Jon Lanenga" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cutive+Mono&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link type="text/css" rel="stylesheet" href="CSS/small.css" />
+    <link type="text/css" rel="stylesheet" href="CSS/medium.css" />
+    <link type="text/css" rel="stylesheet" href="CSS/large.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <title>Atmosphere</title>
+    <script defer src="js/dates.js"></script>
+    <script defer src="js/preston.js"></script>
+  </head>
+  <body>
+    <p id="banner"></p>
+    <header>
+      <div class="headings">
+        <img class="logo" src="images/logo.webp" alt="Logo" />
+        <h1>
+          The Atmosphere<br />
+          <span class="motto">More than just the Weather</span>
+        </h1>
+      </div>
+
+      <nav>
+        <div id="header_links">
+          <div id="nav">
+            <button id="hamburgerbtn">
+              <span>&#9776;</span><span>X</span>
+            </button>
+            <ul id="primarynav">
+              <li><a href="/lesson-5/index.html">Home</a></li>
+              <li><a id="current-page" href="#">Preston</a></li>
+              <li><a href="#">Soda Springs</a></li>
+              <li><a href="#">Fish Haven</a></li>
+              <li><a href="/weather/stormcenter.html">Storm Center</a></li>
+              <li><a href="/weather/gallery-7.html">Gallery</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h2>Preston Idaho</h2>
+      <div class="hero">
+        <section class="overview">
+          <h2>Weather Summary</h2>
+          <p><strong>Currently:</strong> x</p>
+          <p><strong>High:</strong> x&deg;</p>
+          <p><strong>Wind Chill:</strong> x&deg;</p>
+          <p><strong>Humidity:</strong> x%</p>
+          <p><strong>Wind Speed:</strong> x MPH</p>
+        </section>
+      </div>
+      <section class="forecast">
+        <h3>5 Day Forecast</h3>
+        <table id="five_day">
+            <tr>
+                <th id="day-1"></th>
+                <th id="day-2"></th>
+                <th id="day-3"></th>
+                <th id="day-4"></th>
+                <th id="day-5"></th>
+            </tr>
+            <tr>
+                <td><img id="img-1" src="placeholder.gif" alt="If this image is displayed, the javascript failed to load data from the API."></td>
+                <td><img id="img-2" src="placeholder.gif" alt="If this image is displayed, the javascript failed to load data from the API."></td>
+                <td><img id="img-3" src="placeholder.gif" alt="If this image is displayed, the javascript failed to load data from the API."></td>
+                <td><img id="img-4" src="placeholder.gif" alt="If this image is displayed, the javascript failed to load data from the API."></td>
+                <td><img id="img-5" src="placeholder.gif" alt="If this image is displayed, the javascript failed to load data from the API."></td>
+            </tr>
+            <tr>
+                <td id="high-1"></td>
+                <td id="high-2"></td>
+                <td id="high-3"></td>
+                <td id="high-4"></td>
+                <td id="high-5"></td>
+            </tr>
+            <tr>
+                <td id="condition-1"></td>
+                <td id="condition-2"></td>
+                <td id="condition-3"></td>
+                <td id="condition-4"></td>
+                <td id="condition-5"></td>
+            </tr>
+            <tr>
+                <td id="low-1"></td>
+                <td id="low-2"></td>
+                <td id="low-3"></td>
+                <td id="low-4"></td>
+                <td id="low-5"></td>
+            </tr>
+        </table>
+      </section>
+      <section class="article">
+        <div class="article_img">
+          <img src="images/back2.webp" alt="placeholder" />
+        </div>
+        <h3>
+          Doctors Confirm Life After Age 35 Is Just Endless Cycle Of Dieting And
+          Back Pain Until You Die
+        </h3>
+        <p>
+          U.S.—According to medical professionals, people turning 35 years of
+          age enter a new phase of life characterized by an endless cycle of
+          dieting and back pain until the merciful release of death. <br />
+
+          "When we released our findings, everyone over 35 said 'duh, we knew
+          that already,'" said 35-year-old researcher Ryan Fowstein. "So I guess
+          science has confirmed what everyone already suspected." Fowstein then
+          shrugged his shoulders but did it in a weird way that caused his neck
+          to instantly get stiff and his back to spasm. "OW, MY BACK!" <br />
+
+          According to the study, once the body has been alive for exactly 35
+          years, it also forgets how to metabolize and digest food, forcing the
+          subject to begin trying all kinds of diets to lose 10 or 15 pounds.
+          The subject will then rediscover bread and cheese and gain all the
+          weight back, over and over again, forever and ever. <br />
+
+          Researchers hope the study will help individuals resolve to make
+          better health decisions—which they will later break before finally
+          resigning to their eternal fate. <br />
+
+          Fowstein and the other researchers celebrated the conclusion of their
+          study with a pizza party, which unfortunately led to 3 more weeks of
+          indigestion and heartburn as well as back pain for some reason. <br />
+        </p>
+        <p>
+          Sourced from: <a href="https://www.bablyonbee.com">The Bablyon Bee</a>
+        </p>
+      </section>
+      <section class="contact">
+        <h3>Contact Information</h3>
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d47366.34469339145!2d-111.87517579490891!3d42.098977407066165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1602872714788!5m2!1sen!2sus"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+        <p>
+          &#x023E7; Address: <br />The Atmosphere <br />123 Willow Lane
+          <br />Preston, ID 83287
+        </p>
+
+        <p>
+          &#9993; Email:
+          <a class="email" href="mailto:info@TheAtmosphere.com" target="_blank"
+            >info@TheAtmosphere.com</a
+          >
+        </p>
+
+        <p>
+          &#9742; Phone:<a class="phone" href="tel:2085551234">208-555-1234</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy;<span id="year"></span> .:|:.
+        <a href="https://lan21005.github.io/">Jon Lanenga</a> .:|:. Maryland
+        .:|:.
+        <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+      </p>
+      <p>The current date is: <span id="current_date"></span></p>
+      <p id="lastmod">Last modified</p>
+    </footer>
+  </body>
+</html>
