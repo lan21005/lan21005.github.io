@@ -338,6 +338,7 @@ border-style: double;
   .town-data img {
   max-width: 85%;
   box-shadow: 1rem 1rem .5rem #044389;
+  border-style: double;
   }
 
   
