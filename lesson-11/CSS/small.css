@@ -96,7 +96,7 @@ li a:visited {
 
 #primarynav a#current-page {
   background-color: grey;
-  color: deeppink;
+  color: whitesmoke;
   box-shadow: 0 0 10px var(--main-color);
  font-style: oblique; 
 font-weight: bolder;
