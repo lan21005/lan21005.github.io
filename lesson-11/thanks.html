@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Weather site Gallery Page"
+    />
+    <meta name="author" content="Jon Lanenga" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cutive+Mono&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link type="text/css" rel="stylesheet" href="CSS/small.css" />
+    <link type="text/css" rel="stylesheet" href="CSS/medium.css" />
+    <link type="text/css" rel="stylesheet" href="CSS/large.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <title>Atmosphere</title>
+    <script defer src="js/dates.js"></script>
+    <script defer src="js/windchill.js"></script>
+    <script defer src="js/lazyload.js"></script>
+  </head>
+  <body>
+    <p id="banner"></p>
+    <header>
+      <div class="headings">
+        <img class="logo" src="images/logo.webp" alt="Logo" />
+        <h1>
+          The Atmosphere<br />
+          <span class="motto">More than just the Weather</span>
+        </h1>
+      </div>
+
+      <nav>
+        <div id="header_links">
+          <div id="nav">
+            <button id="hamburgerbtn">
+              <span>&#9776;</span><span>X</span>
+            </button>
+            <ul id="primarynav">
+              <li><a href="/lesson-11/index.html">Home</a></li>
+              <li><a href="/lesson-11/preston.html">Preston</a></li>
+              <li><a href="/lesson-11/sodasprings.html">Soda Springs</a></li>
+              <li><a href="/lesson-11/fishhaven.html">Fish Haven</a></li>
+              <li><a id="current-page" href="#">Storm Center</a></li>
+              <li><a href="/lesson-11/gallery.html">Gallery</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+<main>
+    <h1 id="stormcenter_thanks">Storm Center</h1>
+    <h2 id="received_thanks">We have received your report.  Thank you for your help in keeping the community safe.</h2><br>
+    <h3 id="danger"> If you are in any <strong>immediate danger</strong>, please call 911!</h3>
+
+</main>
+
+<footer>
+  <p>
+    &copy;<span id="year"></span> .:|:.
+    <a href="https://lan21005.github.io/">Jon Lanenga</a> .:|:. Maryland
+    .:|:.
+    <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+  </p>
+  <p>The current date is: <span id="current_date"></span></p>
+  <p id="lastmod">Last modified</p>
+</footer>
+</body>
+</html>

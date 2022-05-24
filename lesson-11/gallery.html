@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Weather site Gallery Page"
+    />
+    <meta name="author" content="Jon Lanenga" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cutive+Mono&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link type="text/css" rel="stylesheet" href="CSS/small.css" />
+    <link type="text/css" rel="stylesheet" href="CSS/medium.css" />
+    <link type="text/css" rel="stylesheet" href="CSS/large.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <title>Atmosphere</title>
+    <script defer src="js/dates.js"></script>
+    <script defer src="js/windchill.js"></script>
+    <script defer src="js/lazyload.js"></script>
+  </head>
+  <body>
+    <p id="banner"></p>
+    <header>
+      <div class="headings">
+        <img class="logo" src="images/logo.webp" alt="Logo" />
+        <h1>
+          The Atmosphere<br />
+          <span class="motto">More than just the Weather</span>
+        </h1>
+      </div>
+
+      <nav>
+        <div id="header_links">
+          <div id="nav">
+            <button id="hamburgerbtn">
+              <span>&#9776;</span><span>X</span>
+            </button>
+            <li><a href="/lesson-11/index.html">Home</a></li>
+            <li><a href="/lesson-11/preston.html">Preston</a></li>
+            <li><a href="/lesson-11/sodasprings.html">Soda Springs</a></li>
+            <li><a href="/lesson-11/fishhaven.html">Fish Haven</a></li>
+            <li><a href="/lesson-11/stormcenter.html">Storm Center</a></li>
+            <li><a id="current-page" href="#">Gallery</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Gallery</h1>
+      <div class="gallery">
+        
+        <picture>
+            <img
+              src="images/placeholder.webp"
+              data-src="https://images.unsplash.com/photo-1454789476662-53eb23ba5907?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=752&q=80"
+              width="300"
+              height="400"
+              alt="Hurricane from Space"
+            />
+            <figcaption>Hurricane from Space</figcaption>
+          </picture>
+         
+          <picture>
+            <img
+              src="images/placeholder.webp"
+              width="300"
+              height="400"
+              data-src="https://images.unsplash.com/photo-1516912481808-3406841bd33c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=744&q=80"
+              alt="Lightning in a field"
+            />
+            <figcaption>Lightning in a field</figcaption>
+          </picture>
+         
+          <picture>
+            <img
+              src="images/placeholder.webp"
+              data-src="https://images.unsplash.com/photo-1514632595-4944383f2737?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              loading="lazy"
+              width="300"
+              height="400"
+              alt="Snow in the city"
+            />
+        <figcaption>Two people share an umbrella in the snow</figcaption>
+          </picture>
+   
+          <picture>
+            <img
+              src="images/placeholder.webp"
+              data-src="https://images.unsplash.com/photo-1601134467661-3d775b999c8b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1375&q=80"
+              alt="Mountain view with a lake"
+              loading="lazy"
+              width="300"
+              height="400"
+            />
+            <figcaption>A Mountain view with a lake</figcaption>
+          </picture>
+   
+          <picture>
+            <img
+              src="images/placeholder.webp"
+              data-src="https://images.unsplash.com/photo-1527482797697-8795b05a13fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              alt="Far off tornado"
+              loading="lazy"
+              width="300"
+              height="400"
+            />
+            <figcaption>Tornado in the distance</figcaption>
+          </picture>
+   
+          <picture>
+            <img
+              src="images/placeholder.webp"
+              data-src="https://images.unsplash.com/photo-1561625709-ec3110d5528e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              alt="Mount Rushmore in the evening"
+              loading="lazy"
+              width="300"
+              height="400"
+            />
+            <figcaption>Mount Rushmore in the evening</figcaption>
+          </picture>
+   
+          <picture>
+            <img
+              src="images/placeholder.webp"
+              data-src="https://images.unsplash.com/photo-1500674425229-f692875b0ab7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt="Ocean storm by an island"
+              loading="lazy"
+              width="300"
+              height="400"
+            />
+            <figcaption>Ocean storm by an island</figcaption>
+          </picture>
+   
+          <picture>
+            <img
+              src="images/placeholder.webp"
+              data-src="https://images.unsplash.com/photo-1607170314284-dc77e8d51f2f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1325&q=80"
+              alt="Young man standing in a snowy forrest"
+              loading="lazy"
+              width="300"
+              height="400"
+            />
+            <figcaption>Young man standing in a snowy forrest</figcaption>
+          </picture>
+   
+          <picture>
+            <img
+              src="images/placeholder.webp"
+              data-src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt="McWay Falls, USA"
+              loading="lazy"
+              width="300"
+              height="400"
+            />
+            <figcaption>McWay Falls, USA </figcaption>
+          </picture>
+      
+    </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy;<span id="year"></span> .:|:.
+        <a href="https://lan21005.github.io/">Jon Lanenga</a> .:|:. Maryland
+        .:|:.
+        <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+      </p>
+      <p>The current date is: <span id="current_date"></span></p>
+      <p id="lastmod">Last modified</p>
+    </footer>
+  </body>
+</html>
