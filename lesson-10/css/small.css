@@ -337,3 +337,54 @@ border-style: double;
   max-width: 85%;
   box-shadow: 1rem 1rem .5rem #044389;
   }
+
+  .spotlight {
+    border: solid #FFAD05 1px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #5995ED;
+    display: grid;
+    grid-template-columns: 1 2 3;
+    grid-template-rows: 1 2 3 4;
+  }
+  
+  .spotlight button {
+      grid-column-start: 2;
+      grid-row-start: 4;
+  }
+  
+  .spotlight img {
+   width: 75%;
+   margin: 1rem;
+   border-radius: 5px;
+   border-style: double;
+  box-shadow: 2rem 2rem 1rem #044389;
+  }
+  /* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -25px;
+  color: black;
+   border-radius:5px;
+}
+
+.next {
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  grid-column-start: 3;
+  grid-row-start: 1;
+  
+}
+
+.prev {
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  grid-column-start: 1;
+    grid-row-start: 1;
+}
