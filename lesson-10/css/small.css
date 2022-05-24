@@ -331,6 +331,8 @@ border-style: double;
   background-color: #5995ED;
   padding: 1rem;
   border-radius: 25px;
+  font-family: "Mukta", sans-serif;
+
   }
   
   .town-data img {
@@ -338,7 +340,7 @@ border-style: double;
   box-shadow: 1rem 1rem .5rem #044389;
   }
 
-  .spotlight {
+    .spotlight {
     border: solid #FFAD05 1px;
     width: 100%;
     margin: 0 auto;

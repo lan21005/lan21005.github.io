@@ -48,7 +48,7 @@
  picture:hover {box-shadow: 0 0 50px lightyellow;}
  
  .home-content-wrap {
-  width: 60rem;
+  width: 100rem;
   margin: 0 auto;
   margin-top: 15px;
   display: grid;
