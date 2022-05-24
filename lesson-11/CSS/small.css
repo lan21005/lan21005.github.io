@@ -95,11 +95,13 @@ li a:visited {
 }
 
 #primarynav a#current-page {
-  background-color: #f2f3ae;
-  color: red;
-  box-shadow: 0 0 10px var(--main-color); }
-
-
+  background-color: grey;
+  color: deeppink;
+  box-shadow: 0 0 10px var(--main-color);
+ font-style: oblique; 
+font-weight: bolder;
+  
+}
 
 .article_img {
   max-width: 100%;
