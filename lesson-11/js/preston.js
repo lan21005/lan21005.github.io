@@ -1,5 +1,16 @@
+var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+var request = new XMLHttpRequest();
+
+request.open('GET', requestURL);
+request.responseType = 'json';
+request.send();
+request.onload = function () {
+    var townEvents = request.response;
+    townPreston(townEvents);
+}
+
 let weatherRequest = new XMLHttpRequest();
-let apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=e681baa04b7db3d01b4b4bb6cfe8420a';
+let apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=0b25c1f6d23d52987a6d10f8c21a31e6';
 weatherRequest.open('Get', apiURLstring, true);
 weatherRequest.send();
 
