@@ -1,3 +1,18 @@
+function townPreston(jsonObj) {
+  var towns = jsonObj['towns']
+  var i = 0;
+  var name = towns[i].name;
+
+  for (i = 0; i < towns.length; i++) {
+      var name = towns[i].name;
+      if (name == "Preston") {
+          var eventsString = towns[i].events.join(', ');
+          document.getElementById("townEventsPreston").innerHTML = "<h2>Preston Events</h2> " + eventsString;
+      }
+  }
+}
+
+
 let weatherRequest = new XMLHttpRequest();
 let apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=e681baa04b7db3d01b4b4bb6cfe8420a';
 weatherRequest.open('Get', apiURLstring, true);
@@ -43,3 +58,4 @@ let forecastRequest = new XMLHttpRequest();
 let forecastApiURLstring = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=e681baa04b7db3d01b4b4bb6cfe8420a';
 forecastRequest.open('Get', forecastApiURLstring, true);
 forecastRequest.send();
+
