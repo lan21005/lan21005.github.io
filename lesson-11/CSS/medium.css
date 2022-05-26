@@ -52,7 +52,6 @@
   }
 
   .home-content-wrap {
-    width: 60rem;
     margin: 0 auto;
     margin-top: 15px;
     display: grid;
@@ -61,7 +60,7 @@
      'item3'
      'item4';
     grid-gap: 15px;
-    }
+       }
     
     iframe {
     width: 100%;
@@ -69,18 +68,18 @@
     border: none;
     }
   
-   .item2 { 
+   /* .item2 { 
     grid-area: item2; 
-    grid-column: 1/ span 1;
+
   }
   .item3 { 
   grid-area: item3; 
-    grid-column: 2/ span 1;
+
   }
   .item4 { 
   grid-area: item4; 
-  grid-column: 3/ span 1;
-  }
+ 
+  } */
   
   .town-data {
     background-color: #5995ED;

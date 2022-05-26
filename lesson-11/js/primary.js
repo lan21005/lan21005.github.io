@@ -96,19 +96,19 @@ var townName = document.createElement('h2');
 townName.textContent = towns[6].name;
 preston.appendChild(townName);
 
-var townMotto = document.createElement('h3');
+var townMotto = document.createElement('h6');
 townMotto.textContent = '"' + towns[6].motto + '"';
 preston.appendChild(townMotto);
 
-var townFound = document.createElement('h4');
+var townFound = document.createElement('h6');
 townFound.textContent = 'Founded: ' + towns[6].yearFounded;
 preston.appendChild(townFound);
 
-var townPop = document.createElement('h4');
+var townPop = document.createElement('h6');
 townPop.textContent = 'Population: ' + towns[6].currentPopulation;
 preston.appendChild(townPop);
 
-var townRain = document.createElement('h4');
+var townRain = document.createElement('h6');
 townRain.textContent = 'Average Precipitation: ' + towns[6].averageRainfall + '"';
 preston.appendChild(townRain);
 }
@@ -121,19 +121,19 @@ var townName = document.createElement('h2');
 townName.textContent = towns[0].name;
 sodasprings.appendChild(townName);
 
-var townMotto = document.createElement('h3');
+var townMotto = document.createElement('h6');
 townMotto.textContent = '"' + towns[0].motto + '"';
 sodasprings.appendChild(townMotto);
 
-var townFound = document.createElement('h4');
+var townFound = document.createElement('h6');
 townFound.textContent = 'Founded: ' + towns[0].yearFounded;
 sodasprings.appendChild(townFound);
 
-var townPop = document.createElement('h4');
+var townPop = document.createElement('h6');
 townPop.textContent = 'Population: ' + towns[0].currentPopulation;
 sodasprings.appendChild(townPop);
 
-var townRain = document.createElement('h4');
+var townRain = document.createElement('h6');
 townRain.textContent = 'Average Precipitation: ' + towns[0].averageRainfall + '"';
 sodasprings.appendChild(townRain);
 }
@@ -146,15 +146,15 @@ var townName = document.createElement('h2');
 townName.textContent = towns[2].name;
 fishhaven.appendChild(townName);
 
-var townMotto = document.createElement('h3');
+var townMotto = document.createElement('h6');
 townMotto.textContent = '"' + towns[2].motto + '"';
 fishhaven.appendChild(townMotto);
 
-var townFound = document.createElement('h4');
+var townFound = document.createElement('h6');
 townFound.textContent = 'Founded: ' + towns[2].yearFounded;
 fishhaven.appendChild(townFound);
 
-var townPop = document.createElement('h4');
+var townPop = document.createElement('h6');
 townPop.textContent = 'Population: ' + towns[2].currentPopulation;
 fishhaven.appendChild(townPop);
 

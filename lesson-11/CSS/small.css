@@ -32,13 +32,26 @@ main {
   padding: 10px;
 }
 
-h1,
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1px;
+}
+
 h2,
 h3,
 h4,
-h5,
+h5
+ {
+  font-size: 1.0em;
+  padding-top: 20px;
+  padding-right: 35px;
+  font-family: "Mukta", sans-serif;
+}
+
 h6 {
-  font-size: 1.5em;
+  font-size: 1.0em;
+  font-weight: 200;
   padding-top: 20px;
   padding-right: 35px;
   font-family: "Mukta", sans-serif;
