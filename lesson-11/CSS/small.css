@@ -75,8 +75,19 @@ h6 {
   font-style: oblique;
 }
 
+#info {
+  display: block;
+  border-style: double;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #eee;
+  color: #444;
+  font-style: oblique;
+}
+
 .contact {
-  display: flex;
+display: grid;
+grid-template-columns: 1fr;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;

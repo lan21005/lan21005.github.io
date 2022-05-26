@@ -92,6 +92,19 @@
     max-width: 250px;
     box-shadow: 1rem 1rem .5rem #044389;
     }
-
+    .contact {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        color: #444;
+        background-color: #eee;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-family: 'Raleway', sans-serif;
+        padding: 1rem;
+        border-style: double;
+      }
 
 }
