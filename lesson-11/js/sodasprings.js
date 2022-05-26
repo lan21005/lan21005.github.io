@@ -13,19 +13,19 @@ request.onload = function () {
 
 //* Function to write Soda Springs data onto page; loop through JSON to find town name, then write header and events in townEventsSoda article
 
-function townSodaSprings(jsonObj) {
-    var towns = jsonObj['towns']
-    var i = 0;
-    var name = towns[i].name;
+// function townSodaSprings(jsonObj) {
+//     var towns = jsonObj['towns']
+//     var i = 0;
+//     var name = towns[i].name;
 
-    for (i = 0; i < towns.length; i++) {
-        var name = towns[i].name;
-        if (name == "Soda Springs") {
-            var eventsString = towns[i].events.join(', ');
-            document.getElementById("townEventsSodaSprings").innerHTML = "<h2>Soda Springs Events</h2> " + eventsString;
-        }
-    }
-}
+//     for (i = 0; i < towns.length; i++) {
+//         var name = towns[i].name;
+//         if (name == "Soda Springs") {
+//             var eventsString = towns[i].events.join(', ');
+//             document.getElementById("townEventsSodaSprings").innerHTML = "<h2>Soda Springs Events</h2> " + eventsString;
+//         }
+//     }
+// }
 
 //* Request Current Weather data from OpenWeatherMap
 
