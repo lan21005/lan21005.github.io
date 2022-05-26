@@ -158,7 +158,7 @@ var townPop = document.createElement('h6');
 townPop.textContent = 'Population: ' + towns[2].currentPopulation;
 fishhaven.appendChild(townPop);
 
-var townRain = document.createElement('h4');
+var townRain = document.createElement('h6');
 townRain.textContent = 'Average Precipitation: ' + towns[2].averageRainfall + '"';
 fishhaven.appendChild(townRain);
 }
