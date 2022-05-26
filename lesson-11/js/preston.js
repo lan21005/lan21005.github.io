@@ -26,7 +26,6 @@ weatherRequest.onload = function () {
   document.getElementById('windTemp').innerHTML = mainTemp;
   document.getElementById('windSpeed').innerHTML = windSpeed;
   document.getElementById('windChill').innerHTML = getWindChill();
-
   document.getElementById("conditions-icon").setAttribute("src", imageConditions + weatherData.weather[0].icon + ".png");
   document.getElementById("conditions-icon").setAttribute("alt", weatherData.weather[0].description);
 }
@@ -43,7 +42,6 @@ function getWindChill() {
 function windChill(tempF, speed) {
   var windChillFactor = 35.74 + 0.6215 * tempF - 35.75 * Math.pow(speed, 0.16) + 0.4275 * tempF * Math.pow(speed, 0.16);
   var soCold = windChillFactor.toFixed(2);
-
   return soCold;
 }
 

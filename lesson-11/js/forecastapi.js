@@ -39,8 +39,6 @@ function findDayOfWeek(apiDay) {
   return dayOfWeek;
 }
 
-//* Get correct days for five day forecast, compare dt_txt for time stamp 18:00:00 and loop
-
 forecastRequest.onload = function () {
   let forecastData = JSON.parse(forecastRequest.responseText);
   console.log(forecastData);
@@ -75,9 +73,7 @@ forecastRequest.onload = function () {
       }
       z++;
     }
-  }
-
-  //* Write data into table by element IDs.
+  
 
   document.getElementById("day-1").innerHTML = findDayOfWeek(dayOne.dt_txt);
   document.getElementById("day-2").innerHTML = findDayOfWeek(dayTwo.dt_txt);
@@ -154,5 +150,6 @@ fetch(apiURL)
         0.4275 * temp * Math.pow(wspeed, 0.16);
       return windchill.toFixed(1);
     }
-  });
+  }
+  )};
 
