@@ -1,5 +1,3 @@
-//* Request Current Weather data from OpenWeatherMap
-
 let weatherRequest = new XMLHttpRequest();
 let apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=e681baa04b7db3d01b4b4bb6cfe8420a';
 weatherRequest.open('Get', apiURLstring, true);
@@ -9,8 +7,6 @@ weatherRequest.onload = function () {
   let weatherData = JSON.parse(weatherRequest.responseText);
   console.log(weatherData);
 
-  //* Store data in variables
-
   var currentCondition = weatherData.weather[0].main;
   var highTemp = weatherData.main.temp_max;
   var humidity = weatherData.main.humidity;
@@ -18,7 +14,6 @@ weatherRequest.onload = function () {
   var windSpeed = weatherData.wind.speed;
   var imageConditions = "https://openweathermap.org/img/w/";
 
-  //* Write data into page using element IDs and variables
 
   document.getElementById('current-weather').innerHTML = currentCondition;
   document.getElementById('temp-high').innerHTML = highTemp;
@@ -31,7 +26,6 @@ weatherRequest.onload = function () {
 }
 
 //* Calculate wind chill
-
 function getWindChill() {
   var tempF = parseInt(document.getElementById('windTemp').innerHTML);
   var speed = parseInt(document.getElementById('windSpeed').innerHTML);
@@ -44,8 +38,6 @@ function windChill(tempF, speed) {
   var soCold = windChillFactor.toFixed(2);
   return soCold;
 }
-
-//* Get Forecast data from OpenWeatherMap
 
 let forecastRequest = new XMLHttpRequest();
 let forecastApiURLstring = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=e681baa04b7db3d01b4b4bb6cfe8420a';
