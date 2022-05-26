@@ -1,6 +1,8 @@
-@media only screen and (min-width: 42rem)
-{
-  .hero, .forecast, .article, .contact {
+@media only screen and (min-width: 42rem) {
+  .hero,
+  .forecast,
+  .article,
+  .contact {
     background-color: lightblue;
   }
 
@@ -10,14 +12,13 @@
 
   .gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   }
-  
- 
+
   picture img {
-  width: 95%;
-  border-style: double;
+    width: 95%;
+    border-style: double;
   }
 
   .forecast {
@@ -29,46 +30,45 @@
     width: 35rem;
     margin: auto;
   }
-  
+
   table {
     background-color: lightgrey;
     margin: 1rem;
-    border: solid black ;
+    border: solid black;
     color: black;
   }
-  
+
   th {
     background-color: lightgreen;
-    color: #FFF;
+    color: #fff;
     padding: 1.5rem;
     font-size: 1rem;
-    border:solid black .1rem;
+    border: solid black 0.1rem;
   }
-  
+
   td {
-    border: dashed black .1rem; 
-    padding: .2rem;
-   
+    border: dashed black 0.1rem;
+    padding: 0.2rem;
   }
 
   .home-content-wrap {
     margin: 0 auto;
     margin-top: 15px;
     display: grid;
-    grid-template-areas: 
-     'item2'
-     'item3'
-     'item4';
+    grid-template-areas:
+      "item2"
+      "item3"
+      "item4";
     grid-gap: 15px;
-       }
-    
-    iframe {
+  }
+
+  iframe {
     width: 100%;
     height: 30rem;
     border: none;
-    }
-  
-   /* .item2 { 
+  }
+
+  /* .item2 { 
     grid-area: item2; 
 
   }
@@ -80,30 +80,29 @@
   grid-area: item4; 
  
   } */
-  
+
   .town-data {
-    background-color: #5995ED;
+    background-color: #5995ed;
     padding: 1rem;
     border-radius: 25px;
-    }
-    
-    .town-data img {
-    max-width: 250px;
-    box-shadow: 1rem 1rem .5rem #044389;
-    }
-    .contact {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        align-items: center;
-        color: #444;
-        background-color: #eee;
-        font-size: 1rem;
-        line-height: 1.5rem;
-        font-family: 'Raleway', sans-serif;
-        padding: 1rem;
-        border-style: double;
-      }
+  }
 
+  .town-data img {
+    max-width: 250px;
+    box-shadow: 1rem 1rem 0.5rem #044389;
+  }
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: #444;
+    background-color: #eee;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: "Raleway", sans-serif;
+    padding: 1rem;
+    border-style: double;
+  }
 }
