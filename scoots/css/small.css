@@ -1,0 +1,9 @@
+:root {
+    --primary-color: #caf0f8;
+    --secondary-color: #827c7c;
+  }
+  
+  html {
+    background-color: var(--primary-color);
+  }
+  
