@@ -1,14 +1,19 @@
-// Dates //
-const lastmod = document.querySelector("#lastmod");
-lastmod.textContent = `Last Updated: ${document.lastModified}`;
+/* DATES */
+const now = new Date();
+const year = now.getFullYear();
+// const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
 
-const year = document.querySelector("#year");
-year.innerHTML = new Date().getFullYear();
+// /*Date in header*/
+const datefieldUK = document.querySelector("#date");
+const fulldateUK = new Intl.DateTimeFormat("en-UK", {
+  dateStyle: "full",
+}).format(now);
+datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
 
-const d = new Date();
-//Display date in long format Weekday, Month Day, Year
-const date = document.querySelector("#date");
-document.getElementById("current_date").innerHTML = d.toDateString();
+//Last date modified code
+const lastmodified = document.querySelector("#lastmodified");
+const author_name = "Jon Lanenga";
+lastmodified.innerHTML = `&copy; ${year} || <b>${author_name} </b> || WDD 230 Project || Last Modification: ${document.lastModified}`;
 
 // Hamburger Button //
 /*Button css*/

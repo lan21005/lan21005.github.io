@@ -1,12 +1,18 @@
 :root {
     --primary-color: #74d3f0;
     --secondary-color: #f5ec9e;
+    --third-color: #f8a460;
+    --fourth-color: #dd7ffa;
   }
   
   html {
     background-color: var(--primary-color);
   }
   
+header, footer {
+  background-color: var(--fourth-color);
+}
+
 /********************/
 /*NAVIGATION SECTION*/
 /********************/
@@ -41,7 +47,6 @@ nav ul.open {
 }
 
 nav button {
-  /* color: #536878; */
   background-color: #f6f1ea;
   transition: 0.5s;
   border: none;
@@ -81,4 +86,9 @@ nav a:hover {
 }
 #hamburgerbtn.open span:nth-child(2) {
   display: block;
+}
+
+
+#map {
+  border-style: double;
 }
