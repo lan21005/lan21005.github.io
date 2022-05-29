@@ -110,3 +110,7 @@ nav a:hover {
 #rental_agreement {
   background-color: var(--secondary-color);
 }
+
+#address {
+  padding: 10px;
+}
