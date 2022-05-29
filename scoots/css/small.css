@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #55a9f8;
-    --secondary-color: #c5eb89;
+    --primary-color: #74d3f0;
+    --secondary-color: #f5ec9e;
   }
   
   html {
@@ -27,7 +27,7 @@ nav ul li a {
   padding: 0.75rem;
   text-decoration: none;
   font-size: 0.95rem;
-  background-color: #373737;
+  background-color: black;
   transition: 0.5s;
   border-radius: 25px;
   margin: 2px;
@@ -41,7 +41,7 @@ nav ul.open {
 }
 
 nav button {
-  color: #536878;
+  /* color: #536878; */
   background-color: #f6f1ea;
   transition: 0.5s;
   border: none;
@@ -50,14 +50,15 @@ nav button {
 }
 
 nav a:hover {
-  background-color: #f2f3ae;
+  background-color: var(--secondary-color);
+  /* #f2f3ae; */
   color: #36454f;
   border-radius: 50px;
 }
 
 #primarynav a#current-page {
-  background-color: grey;
-  color: whitesmoke;
+  background-color: black;
+  color: rgb(247, 174, 174);
   box-shadow: 0 0 10px var(--main-color);
   font-style: oblique;
   font-weight: bolder;
