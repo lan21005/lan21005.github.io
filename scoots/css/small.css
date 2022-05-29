@@ -92,3 +92,17 @@ nav a:hover {
 #map {
   border-style: double;
 }
+
+.lower {
+  /* make .lower have content spread across the section */
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  max-width: 900px;
+  margin: 2PX;
+  padding: 0.5rem;
+  background-color: var(--third-color);
+  border-radius: 25px;
+}
