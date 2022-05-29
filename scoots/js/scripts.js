@@ -1,19 +1,14 @@
-/* DATES */
-const now = new Date();
-const year = now.getFullYear();
-// const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
+// Dates //
+const lastmod = document.querySelector("#lastmod");
+lastmod.textContent = `Last Updated: ${document.lastModified}`;
 
-// /*Date in header*/
-const datefieldUK = document.querySelector("#date");
-const fulldateUK = new Intl.DateTimeFormat("en-UK", {
-  dateStyle: "full",
-}).format(now);
-datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
+const year = document.querySelector("#year");
+year.innerHTML = new Date().getFullYear();
 
-//Last date modified code
-const lastmodified = document.querySelector("#lastmodified");
-const author_name = "Jon Lanenga";
-lastmodified.innerHTML = `&copy; ${year} || <b>${author_name} </b> || WDD 230 Project || Last Modification: ${document.lastModified}`;
+const d = new Date();
+//Display date in long format Weekday, Month Day, Year
+const date = document.querySelector("#date");
+document.getElementById("current_date").innerHTML = d.toDateString();
 
 // Hamburger Button //
 /*Button css*/
