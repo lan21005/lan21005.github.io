@@ -10,7 +10,13 @@
   }
   
 header, footer {
+  display: flex;
   background-color: var(--fourth-color);
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  text-align: center;
+  padding: 1rem;
 }
 
 /********************/
@@ -129,6 +135,8 @@ nav a:hover {
 }
 
 #heading{
+  display: flex;
+  align-content: space-around;
   text-align: center;
   margin: 5px;
   max-width: 900px;
