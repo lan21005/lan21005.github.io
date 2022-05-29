@@ -23,5 +23,5 @@ x.onclick = toggleMenu;
 
 
 function adjustRating(quantity) {
-  document.getElementById("quantity").innerHTML = quantity;
+  document.getElementById("quantityvalue").innerHTML = quantity;
 }
