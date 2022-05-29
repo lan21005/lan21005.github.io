@@ -1,231 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- meta content -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Scoots Index Page" />
+    <meta name="author" content="Jon Lanenga" />
+    <title>Scoots | Come Scoot Away With Us</title>
 
-<head>
-  <!-- meta content -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Scoots Index Page" />
-  <meta name="author" content="Jon Lanenga" />
-  <title>Scoots | Come Scoot Away With Us</title>
+    <!-- Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Outfit:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
 
-  <!-- Links -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Outfit:wght@200&display=swap"
-    rel="stylesheet" />
-  <link rel="shortcut icon" href="images/favicon.ico" />
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/small.css" />
-  <link rel="stylesheet" href="css/medium.css" />
-  <link rel="stylesheet" href="css/large.css" />
+    <!-- Scripts -->
+    <script defer src="js/scripts.js"></script>
+  </head>
 
-  <!-- Scripts -->
-  <script defer src="js/scripts.js"></script>
-</head>
-
-<body>
-  <header>
-
-    <div id="header_links">
-      <div id="nav">
-        <nav>
-          <button id="hamburgerbtn">
-            <span>&#9776;</span><span>X</span>
-          </button>
-          <ul id="primarynav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="rentals.html">Rentals</a></li>
-            <li><a id="current-page" href="reservations.html">Reservations</a></li>
-            <li><a href="tours.html">Tours</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-
-  </header>
-  <main>
-    <article id="rental_agreement">
-      <h1>Rental Agreement</h1>
-
-      <h2>Check-in and check-out times
-      </h2>
-      <p>
-        Check-in time is at <strong>5:00pm.</strong> Check-out time is at <strong>11:00am.</strong>
-      </p>
-      <h2>General Rules
-      </h2>
-      <p>By requesting a reservation below, you argree to the following Rental Agreement:</p>
-      <ul>
-        <li>A $50 security deposit is required to confirm reservations</li>
-        <li>A valid drivers license is required in hand at time of rental</li>
-        <li>No one under 12 years of age is allowed to ride on the scooters</li>
-        <li>Fuel charge not included</li>
-        <li>Unlimited mileage</li>
-        <li>Liability insurance is free of charge</li>
-        <li>Reservations rate requires 24 hour prior notification</li>
-        <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals</li>
-        <li>Payment via Google Pay, cash, credit card, debit card, or PayPal
-        </li>
-        <li>Rentals may be returned to either Location</li>
-      </ul>
-
-      <h2>Minimum and maximum reservation requirements
-      </h2>
-
-      <p>
-        The minimum reservation is <strong>1 day.</strong> The maximum reservation is <strong>5 days.</strong>
-      </p>
-
-      <h2>Accepted payment methods
-      </h2>
-      <ul>
-        <li>Google Pay</li>
-        <li>PayPal</li>
-        <li>Credit card</li>
-        <li>Debit Card</li>
-        <li>Cash</li>
-      </ul>
-    </article>
-
-    <h1>Reservation Information</h1>
-    <form action="confirmation.html">
-      <div class="form-wrap">
-        <p>Asterisk (*) denotes a required field</p>
-        <h2>Contact Information</h2>
-        <div class="formblock">
-          <label for="name">First Name*:</label>
-          <input type="text" id="fname" name="fname" minlength="5" maxlength="50" size="20" required
-            pattern="[A-Z][A-Za-z' -]+" placeholder="Melvin"/><br>
-            <br><label for="mname">Middle Name:</label>
-          <input type="text" id="mname" name="mname" minlength="5" maxlength="50" size="20"
-            pattern="[A-Z][A-Za-z' -]+" placeholder="R"/><br>
-            <br><label for="lname">Last Name*:</label>
-          <input type="text" id="lname" name="lname" minlength="5" maxlength="50" size="20" required
-            pattern="[A-Z][A-Za-z' -]+" placeholder="Ford"/>
-        </div>
-        <br />
-        <div class="formblock">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="email@domain.com" size="20" />
-        </div>
-        <br />
-        <div class="formblock">
-          <label for="phone">Phone*:</label>
-          <input type="tel" id="phone" name="tel" required minlength="10" size="20" placeholder="555-123-4560" />
-        </div>
-        <br />
-
-        <div class="formblock">
-          <label for="home_address">Home Address*:</label>
-          <input type="text" id="home_address" name="zip" minlength="5" maxlength="100" size="40" required pattern="[A-Z][A-Za-z' -]+" placeholder="1600 Pennsylvania, Washington D.C. 20500"/>
-        </div>
-        <hr>
-        <h2>Travel Info</h2>
-        <div class="formblock">
-          <label for="date">Check-in Date</label>
-          <input type="date" id="check-in-date" name="check-in-date" size="5" />
-        </div>
-        <br />
-        <div class="formblock">
-          <label for="date">Check-Out Date</label>
-          <input type="date" id="check-out-date" name="check-out-date" size="5" />
-        </div>
-        <br />
-        <div class="formblock">
-          <label for="rental_vehicle">Rental Vehicle:</label>
-          <select id="rental_vehicle">
-            <option selected disabled>Select Desired Rental Vehicle...</option>
-
-            <option value="honda_metro">Honda Metro Scooter</option>
-
-            <option value=">honda_io">Honda Dio Scooter</option>
-
-            <option value="honda_pcx150">Honda PCX150 Scooter</option>
-
-            <option value="honda_pioneer">Honda Pioneer ATV</option>
-
-            <option value="jeep_4_door">Jeep Wrangler—4 door with a/c</option>
-
-            <option value="jeep_2_door">Jeep Wrangler—2 door</option>
-
-
-
-          </select>
-        </div>
-        <br />
-        <div>
-          <label for="quantity">How many (1 to 5):</label>
-          <input type="range" id="quantity" value="1" min="1" max="5" step="1" oninput="adjustRating(this.value)"
-            onchange="adjustRating(this.value)" />
-          <span id="quantityvalue">1</span>
-        </div>
-        <br />
-        <div class="formblock">
-          <label for="region">Return Location:</label>
-          <select id="region">
-            <option selected disabled>Select Return Location...</option>
-            <option value="playa_del_carmen">Playa del Carmen-Cozumel Ferry Dock</option>
-            <option value="terminal_puerta_maya">Terminal Puerta Maya</option>
-          </select>
-        </div>
-        <hr>
-        <div>
-          <h2>Do you have Special requirements?</h2>
-        </div>
-        <div class="radio">
-          <div class="radio.button">
-            <label for="yes">Yes</label>
-            <input type="radio" id="yes" name="special" value="yes" checked />
-          </div>
-          <div class="radio.button">
-            <label for="no">No</label>
-            <input type="radio" id="no" name="special" value="no" />
-          </div>
-        </div>
-        <br />
-        <div class="formblock">
-          <strong>Special Accomodations and Additional Comments:</strong><br />
-          <textarea id="styled" name="message" maxlength="2500" rows="4" cols="60" placeholder="Please share any accomodations or comments you feel we should know."></textarea>
+  <body>
+    <header>
+      <div id="header_links">
+        <div id="nav">
+          <nav>
+            <button id="hamburgerbtn">
+              <span>&#9776;</span><span>X</span>
+            </button>
+            <ul id="primarynav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="rentals.html">Rentals</a></li>
+              <li>
+                <a id="current-page" href="reservations.html">Reservations</a>
+              </li>
+              <li><a href="tours.html">Tours</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
-      <br />
-      <input type="submit" value="Make My Reservation" />
-    </form>
-    <article class="lower">
-      <picture>
-        <iframe id="map"
+    </header>
+    <main>
+      <article id="rental_agreement">
+        <h1>Rental Agreement</h1>
+
+        <h2>Check-in and check-out times</h2>
+        <p>
+          Check-in time is at <strong>5:00pm.</strong> Check-out time is at
+          <strong>11:00am.</strong>
+        </p>
+        <h2>General Rules</h2>
+        <p>
+          By requesting a reservation below, you argree to the following Rental
+          Agreement:
+        </p>
+        <ul>
+          <li>A $50 security deposit is required to confirm reservations</li>
+          <li>A valid drivers license is required in hand at time of rental</li>
+          <li>
+            No one under 12 years of age is allowed to ride on the scooters
+          </li>
+          <li>Fuel charge not included</li>
+          <li>Unlimited mileage</li>
+          <li>Liability insurance is free of charge</li>
+          <li>Reservations rate requires 24 hour prior notification</li>
+          <li>
+            Free delivery to Cozumel hotel, Airbnb, or private residence for 2+
+            day rentals
+          </li>
+          <li>
+            Payment via Google Pay, cash, credit card, debit card, or PayPal
+          </li>
+          <li>Rentals may be returned to either Location</li>
+        </ul>
+
+        <h2>Minimum and maximum reservation requirements</h2>
+
+        <p>
+          The minimum reservation is <strong>1 day.</strong> The maximum
+          reservation is <strong>5 days.</strong>
+        </p>
+
+        <h2>Accepted payment methods</h2>
+        <ul>
+          <li>Google Pay</li>
+          <li>PayPal</li>
+          <li>Credit card</li>
+          <li>Debit Card</li>
+          <li>Cash</li>
+        </ul>
+      </article>
+
+      <h1>Reservation Information</h1>
+      <form action="confirmation.html">
+        <div class="form-wrap">
+          <p>Asterisk (*) denotes a required field</p>
+          <h2>Contact Information</h2>
+          <div class="formblock">
+            <label for="name">First Name*:</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              minlength="5"
+              maxlength="50"
+              size="20"
+              required
+              pattern="[A-Z][A-Za-z' -]+"
+              placeholder="Melvin"
+            /><br />
+            <br /><label for="mname">Middle Name:</label>
+            <input
+              type="text"
+              id="mname"
+              name="mname"
+              minlength="5"
+              maxlength="50"
+              size="20"
+              pattern="[A-Z][A-Za-z' -]+"
+              placeholder="R"
+            /><br />
+            <br /><label for="lname">Last Name*:</label>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              minlength="5"
+              maxlength="50"
+              size="20"
+              required
+              pattern="[A-Z][A-Za-z' -]+"
+              placeholder="Ford"
+            />
+          </div>
+          <br />
+          <div class="formblock">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@domain.com"
+              size="20"
+            />
+          </div>
+          <br />
+          <div class="formblock">
+            <label for="phone">Phone*:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="tel"
+              required
+              minlength="10"
+              size="20"
+              placeholder="555-123-4560"
+            />
+          </div>
+          <br />
+
+          <div class="formblock">
+            <label for="street">Street Address*:</label>
+            <input
+              type="street"
+              class="form-control"
+              id="autocomplete"
+              required
+              placeholder="Street"
+            />
+            <br /><br />
+            <label for="city">City*:</label>
+            <input
+              type="city"
+              class="form-control"
+              id="inputCity"
+              required
+              placeholder="City"
+            />
+            <br /><br />
+            <label for="state">State*:</label>
+            <input
+              type="state"
+              class="form-control"
+              id="inputState"
+              required
+              placeholder="State"
+            />
+            <br /><br />
+            <label for="zip">Zip*:</label>
+            <input
+              type="zip"
+              class="form-control"
+              id="inputZip"
+              required
+              placeholder="Zip"
+            />
+            <br /><br />
+            <label for="country">Country*:</label>
+            <input
+              type="country"
+              class="form-control"
+              id="inputCountry"
+              required
+              placeholder="Country"
+            />
+          </div>
+          <hr />
+          <h2>Travel Info</h2>
+          <div class="formblock">
+            <label for="date">Reservation Start Date</label>
+            <input
+              type="date"
+              id="reservation-start-date"
+              name="reservation-start-date"
+              size="5"
+            />
+          </div>
+          <br />
+          <div class="formblock">
+            <label for="date">Reservation End Date</label>
+            <input
+              type="date"
+              id="reservation-end-date"
+              name="reservation-end-date"
+              size="5"
+            />
+          </div>
+          <br />
+          <div class="formblock">
+            <label for="rental_vehicle">Rental Vehicle:</label>
+            <select id="rental_vehicle">
+              <option selected disabled>
+                Select Desired Rental Vehicle...
+              </option>
+              <option value="honda_metro">Honda Metro Scooter</option>
+              <option value=">honda_io">Honda Dio Scooter</option>
+              <option value="honda_pcx150">Honda PCX150 Scooter</option>
+              <option value="honda_pioneer">Honda Pioneer ATV</option>
+              <option value="jeep_4_door">Jeep Wrangler—4 door with a/c</option>
+              <option value="jeep_2_door">Jeep Wrangler—2 door</option>
+            </select>
+          </div>
+          <br />
+          <div>
+            <label for="quantity">How many (1 to 5):</label>
+            <input
+              type="range"
+              id="quantity"
+              value="1"
+              min="1"
+              max="5"
+              step="1"
+              oninput="adjustRating(this.value)"
+              onchange="adjustRating(this.value)"
+            />
+            <span id="quantityvalue">1</span>
+          </div>
+          <br />
+          <div class="formblock">
+            <label for="region">Return Location:</label>
+            <select id="region">
+              <option selected disabled>Select Return Location...</option>
+              <option value="playa_del_carmen">
+                Playa del Carmen-Cozumel Ferry Dock
+              </option>
+              <option value="terminal_puerta_maya">Terminal Puerta Maya</option>
+            </select>
+          </div>
+          <h2>Payment Information</h2>
+          <div class="formblock">
+            <label for="payment">Payment Method:</label>
+            <select id="payment">
+              <option selected disabled>
+                Select Desired Payment Method...
+              </option>
+              <option value="googlepay">Google Pay</option>
+              <option value=">paypal">PayPal</option>
+              <option value="creditcard">Credit Card</option>
+              <option value="debitcard">Debit Card</option>
+              <option value="cash">Cash</option>
+            </select>
+            <hr />
+            <h2>Select Your Cruise Line (if applicable)</h2>
+            <div class="formblock">
+              <label for="cruise">Cruise Line:</label>
+              <select id="cruise">
+                <option selected disabled>Select Your Cruise Line...</option>
+                <option value="princess">Princess</option>
+                <option value=">royalcarribbean">Royal Carribbean</option>
+                <option value="dutchamerican">Dutch American</option>
+                <option value="disney">Disney</option>
+                <option value="perfection">Perfection Cruise Line</option>
+              </select>
+              <h2>Do you have Special requirements?</h2>
+              <div class="radio">
+                <div class="radio.button">
+                  <label for="yes">Yes</label>
+                  <input
+                    type="radio"
+                    id="yes"
+                    name="special"
+                    value="yes"
+                    checked
+                  />
+                </div>
+                <div class="radio.button">
+                  <label for="no">No</label>
+                  <input type="radio" id="no" name="special" value="no" />
+                </div>
+              </div>
+              <br />
+              <div class="formblock">
+                <strong>Special Accomodations and Additional Comments:</strong
+                ><br />
+                <textarea
+                  id="styled"
+                  name="message"
+                  maxlength="2500"
+                  rows="4"
+                  cols="60"
+                  placeholder="Please share any accomodations or comments you feel we should know."
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <br />
+          <input type="submit" value="Make My Reservation" />
+        </div>
+      </form>
+
+      <article class="lower">
+        <picture>
+          <!--         <iframe id="map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29894.796100401414!2d-86.95387246546431!3d20.512394416533528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e58330a673659%3A0x9cedf516c7d86e9a!2sSan%20Miguel%20de%20Cozumel%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sus!4v1653828532294!5m2!1sen!2sus"
           width="300" height="250" border: 1px solid black; allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </picture>
-      <p>
-        Near Playa del Carmen-Cozumel Ferry Dock<br />
-        Centro de Cozumel
-        Cozumel, Mexico
-      </p>
-      <ul>
-        <li>
-          Email:
-          <a class="email" href="mailto:inquiry@Scoots.com" target="_blank">inquiry@Scoots.com</a>
-        </li>
-        <li>Phone:<a class="phone" href="tel:011 52 1 123 456 7890">Cozumel, Mexico 011-52-1-123-456-7890</a></li>
-      </ul>
-      </div>
-    </article>
-    <br />
-  </main>
-  <footer>
-    <p>
-      &copy;<span id="year"></span> .:|:.
-      <a href="https://lan21005.github.io/">Jon Lanenga</a> .:|:. Maryland
-      .:|:.
-      <a href="https://www.byui.edu/online">BYUI Online Learning</a>
-    </p>
-    <p>The current date is: <span id="current_date"></span></p>
-    <p id="lastmod">Last modified</p>
-  </footer>
-</body>
 
+        </iframe> -->
+        </picture>
+        <p id="address">
+          Near Playa del Carmen <br />
+          Cozumel Ferry Dock <br />
+          Centro de Cozumel <br />
+          Cozumel, Mexico
+        </p>
+        <ul>
+          <li>
+            Email:
+            <a class="email" href="mailto:contact@scoots.com" target="_blank"
+              >Contact@Scoots.com</a
+            >
+          </li>
+          <li>
+            Phone:<a class="phone" href="tel:011 52 1 123 456 7890"
+              >011-52-1-123-456-7890</a
+            >
+          </li>
+        </ul>
+      </article>
+      <br />
+      <footer>
+        <p>
+          &copy;<span id="year"></span> .:|:.
+          <a href="https://lan21005.github.io/">Jon Lanenga</a> .:|:. Maryland
+          .:|:.
+          <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+        </p>
+        <p>The current date is: <span id="current_date"></span></p>
+        <p id="lastmod">Last modified</p>
+      </footer>
+    </main>
+  </body>
 </html>
