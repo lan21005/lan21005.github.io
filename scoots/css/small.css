@@ -106,3 +106,7 @@ nav a:hover {
   background-color: var(--third-color);
   border-radius: 25px;
 }
+
+#rental_agreement {
+  background-color: var(--secondary-color);
+}
