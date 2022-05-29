@@ -48,6 +48,7 @@
         </div>
 
 </header>
+<main>
 <article id="rental_agreement">
        <h1>Rental Agreement</h1>
        <p>The following information will be required for all rentals:</p>
@@ -97,41 +98,151 @@
 </ul>
 </article>
 
-<form id="rental_form" action="reservations.php" method="post">
+<h1>Reservation Information</h1>
+      <form action="confirmation.html">
+        <div class="form-wrap">
+          <h2><strong>Contact Information</strong></h2>
+<p>Asterisk (*) denotes a required field. <hr></p>
+          <div class="formblock">
+            <label for="name">First Name*:</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              minlength="5"
+              maxlength="50"
+              size="20"
+              required
+              pattern="[A-Z][A-Za-z' -]+"
+            /><br>
+            <br><label for="mname">Middle Name:</label>
+            <input
+              type="text"
+              id="mname"
+              name="mname"
+              minlength="5"
+              maxlength="50"
+              size="20"
+              pattern="[A-Z][A-Za-z' -]+"
+            /><br>
+            <label for="lname">Last Name*:</label>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              minlength="5"
+              maxlength="50"
+              size="20"
+              required
+              pattern="[A-Z][A-Za-z' -]+"
+            />
+          </div>
+          <br />
+          <div class="formblock">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@domain.com"
+              size="20"
+            />
+          </div>
+          <br />
+          <div class="formblock">
+            <label for="phone">Phone*:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="tel"
+              required
+              minlength="10"
+              size="20"
+            />
+          </div>
+          <br />
+          <div class="formblock">
+            <label for="zip">ZIP*:</label>
+            <input type="text" id="zip" name="zip" required pattern="[0-9]*" />
+          </div>
 
-</form>
+          <h2>Travel Info</h2>
+          <div class="formblock">
+            <label for="date">Check-in Date</label>
+            <input type="date" id="check-in-date" name="check-in-date" size="5" />
+          </div>
+          <br />
+          <div class="formblock">
+            <label for="date">Check-Out Date</label>
+            <input type="date" id="check-out-date" name="check-out-date" size="5" />
+          </div>
+          <br />
+          <div class="formblock">
+            <label for="type">Rental Type</label>
+            <input list="vechicle-reserve" id="vechicle-reserve" name="type" />
+            <datalist id="vechicle-reserve">
+              <option value="Honda Metro Scooter"></option>
+              <option value="Honda Dio Scooter"></option>
+              <option value="Honda PCX150 Scooter"></option>
+              <option value="Honda Pioneer ATV"></option>
+              <option value="Jeep Wrangler - 4 door with A/C"></option>
+              <option value="Jeep Wrangler - 2 door"></option>
+            </datalist>
+          </div>
+          <br />
+          <div>
+            <label for="quantity">How many (1 to 5):</label>
+            <input
+              type="range"
+              id="quantity"
+              value="1"
+              min="1"
+              max="5"
+              step="1"
+              oninput="adjustRating(this.value)"
+              onchange="adjustRating(this.value)"
+            />
+            <span id="ratingvalue">1</span>
+          </div>
+          <br />
+          <div class="formblock">
+            <label for="region">Return Location:</label>
+            <select id="region">
+              <option selected disabled>Select Return Location...</option>
+              <option value="playa_del_carmen">Playa del Carmen-Cozumel Ferry Dock</option>
+              <option value="terminal_puerta_maya">Terminal Puerta Maya</option>
+                          </select>
+          </div>
+          <br />
+          <div>
+            <h2>Are you in danger?</h2>
+          </div>
+          <div class="radio">
+            <div class="radio.button">
+              <label for="yes">Yes</label>
+              <input type="radio" id="yes" name="danger" value="yes" checked />
+            </div>
 
-<h3>Information and Services</h3>
-<p>
+            <div class="radio.button">
+              <label for="maybe">Maybe</label>
+              <input type="radio" id="maybe" name="danger" value="maybe" />
+            </div>
 
-
-</p>
-
-A $50 security deposit is required to confirm reservations.
-A valid drivers license is required in hand at time of rental.
-No one under 12 years of age is allowed to ride on the scooters.
-Fuel charge not included.
-Unlimited mileage.
-Liability insurance is free of charge.
-Reservations rate requires 24 hour prior notification.
-Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.
-Payment via Google Pay, cash, credit card, debit card, or PayPal.
-Rentals may be returned to either location.
-</p>
-
-Max Persons and Price Chart (includes Tax)
-                                    Reservation	            Walk-In
-Rental Type	        Max. Persons	Half Day (3 hrs)	Full Day	Half Day(3 hrs)     Full Day
-Honda Metro Scooter	        1	    $20	                 $30	    $25	                $35
-Honda Dio Scooter	        2   	$30	                 $40	    $35	                $45
-Honda PCX150 Scooter	    2   	$40	                 $50	    $45	                $55
-Honda Pioneer ATV	        4   	$50	                 $70	    $60	                $80
-Jeep Wrangler—4 door a/c	5	    $70	                 $100	    $85	                $125
-Jeep Wrangler—2 door	    4	    $60	                 $85	    $70	                $90
-
-
-
-
+            <div class="radio.button">
+              <label for="no">No</label>
+              <input type="radio" id="no" name="danger" value="no" />
+            </div>
+          </div>
+          <br />
+          <div class="formblock">
+            <strong>Special Accomodations and Additional Comments:</strong
+            ><br />
+            <textarea id="styled" name="message" maxlength="2500"></textarea>
+          </div>
+        </div>
+        <br />
+        <input type="submit" value="Make My Reservation" />
+      </form>
     <article class="lower">
       <picture>
         <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29894.796100401414!2d-86.95387246546431!3d20.512394416533528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e58330a673659%3A0x9cedf516c7d86e9a!2sSan%20Miguel%20de%20Cozumel%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sus!4v1653828532294!5m2!1sen!2sus" width="300" height="250" border: 1px solid black; allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
@@ -154,6 +265,7 @@ Jeep Wrangler—2 door	    4	    $60	                 $85	    $70	              
     </div>
   </article>  
     <br />
+</main>
     <footer>
       <p>
         &copy;<span id="year"></span> .:|:.
