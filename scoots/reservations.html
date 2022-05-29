@@ -178,16 +178,25 @@
           </div>
           <br />
           <div class="formblock">
-            <label for="type">Rental Type</label>
-            <input list="vechicle-reserve" id="vechicle-reserve" name="type" />
-            <datalist id="vechicle-reserve">
-              <option value="Honda Metro Scooter"></option>
-              <option value="Honda Dio Scooter"></option>
-              <option value="Honda PCX150 Scooter"></option>
-              <option value="Honda Pioneer ATV"></option>
-              <option value="Jeep Wrangler - 4 door with A/C"></option>
-              <option value="Jeep Wrangler - 2 door"></option>
-            </datalist>
+            <label for="rental_vehicle">Rental Vehicle:</label>
+            <select id="rental_vehicle">
+              <option selected disabled>Select Desired Rental Vehicle...</option>
+              
+              <option value="honda_metro">Honda Metro Scooter</option>
+              
+              <option value=">honda_io">Honda Dio Scooter</option>
+
+              <option value="honda_pcx150">Honda PCX150 Scooter</option>
+              
+              <option value="honda_pioneer">Honda Pioneer ATV</option>
+
+              <option value="jeep_4_door">Jeep Wrangler—4 door with a/c</option>
+              
+              <option value="jeep_2_door">Jeep Wrangler—2 door</option>
+
+
+
+            </select>
           </div>
           <br />
           <div>
@@ -202,7 +211,7 @@
               oninput="adjustRating(this.value)"
               onchange="adjustRating(this.value)"
             />
-            <span id="ratingvalue">1</span>
+            <span id="quantity">1</span>
           </div>
           <br />
           <div class="formblock">

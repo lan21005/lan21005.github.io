@@ -114,3 +114,17 @@ nav a:hover {
 #address {
   padding: 10px;
 }
+
+.form-wrap {
+  flex-flow: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-around;
+  margin: 5px;
+  max-width: 900px;
+  margin: 2PX;
+  padding: 0.5rem;
+  background-color: var(--third-color);
+  border-radius: 25px;
+}
+

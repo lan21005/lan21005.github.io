@@ -20,3 +20,8 @@ function toggleMenu() {
 
 const x = document.querySelector("#hamburgerbtn");
 x.onclick = toggleMenu;
+
+
+function adjustRating(quantity) {
+  document.getElementById("quantity").innerHTML = quantity;
+}
