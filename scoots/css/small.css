@@ -1,26 +1,24 @@
 :root {
-    --primary-color: #caf0f8;
-    --secondary-color: #827c7c;
+    --primary-color: #55a9f8;
+    --secondary-color: #c5eb89;
   }
   
   html {
     background-color: var(--primary-color);
   }
   
-
-  /********************/
-/* Hamburger button */
+/********************/
+/*NAVIGATION SECTION*/
 /********************/
 
 nav {
   margin: 0 auto;
   max-width: 900px;
-}
+  }
 
 nav ul {
   list-style-type: none;
   overflow: hidden;
-  border-radius: 10px;
 }
 nav ul li a {
   display: block;
@@ -31,6 +29,8 @@ nav ul li a {
   font-size: 0.95rem;
   background-color: #373737;
   transition: 0.5s;
+  border-radius: 25px;
+  margin: 2px;
 }
 
 nav ul {
@@ -39,6 +39,33 @@ nav ul {
 nav ul.open {
   display: block;
 }
+
+nav button {
+  color: #536878;
+  background-color: #f6f1ea;
+  transition: 0.5s;
+  border: none;
+  font-size: 2rem;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #f2f3ae;
+  color: #36454f;
+  border-radius: 50px;
+}
+
+#primarynav a#current-page {
+  background-color: grey;
+  color: whitesmoke;
+  box-shadow: 0 0 10px var(--main-color);
+  font-style: oblique;
+  font-weight: bolder;
+}
+
+/********************/
+/* Hamburger button */
+/********************/
 
 #hamburgerbtn span:nth-child(1) {
   display: block;
@@ -53,17 +80,4 @@ nav ul.open {
 }
 #hamburgerbtn.open span:nth-child(2) {
   display: block;
-}
-
-nav button {
-  color: #536878;
-  background-color: #f6f1ea;
-  transition: 0.5s;
-  border: none;
-  font-size: 2rem;
-}
-
-nav a:hover {
-  background-color: #f2f3ae;
-  color: #36454f;
 }
