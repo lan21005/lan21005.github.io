@@ -1,10 +1,10 @@
 @media only screen and (min-width: 42rem) {
-  .hero,
+  /* .hero,
   .forecast,
   .article,
   .contact {
     background-color: lightblue;
-  }
+  } */
 
   .logo {
     max-width: 250px;
@@ -21,7 +21,7 @@
     border-style: double;
   }
 
-  .forecast {
+  /* .forecast {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -29,7 +29,7 @@
     position: relative;
     width: 35rem;
     margin: auto;
-  }
+  } */
 
   table {
     background-color: lightgrey;

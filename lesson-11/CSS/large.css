@@ -24,12 +24,12 @@
     max-width: 350px;
   }
 
-  .hero,
+  /* .hero,
   .forecast,
   .article,
   .contact {
     background-color: #fff6f6;
-  }
+  } */
 
   .gallery {
     grid-template-columns: 1fr 1fr 1fr;

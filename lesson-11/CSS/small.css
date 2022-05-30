@@ -84,7 +84,7 @@ h6 {
   border-style: double;
   margin: 10px auto;
   padding: 10px;
-  background-color: #eee;
+  /* background-color: #eee; */
   color: #444;
   font-style: oblique;
 }
@@ -198,11 +198,7 @@ td:hover {
 th:hover{
   background-color: rgb(252, 158, 158);
   font-size: larger;
-
 }
-
-
-
 
 section.overview {
   display: grid;
