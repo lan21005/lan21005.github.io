@@ -18,7 +18,7 @@
     background-color: var(--primary-color);
   }
   
-header, footer {
+header{
   background-color: var(--fourth-color);
   justify-content: center;
   align-items: center;
@@ -33,9 +33,33 @@ header {
   display: flex;
   }
 
+/* footer {
+    
+   font-family: var(--primary-font);
+    background-color: var(--fourth-color);
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px 10px 0 0;
+    flex-flow: column;
+  } */
+
 footer{
-  display: grid;
-}
+  /* Make 3 flex columns in footer */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+  font-family: var(--primary-font);
+  background-color: var(--fourth-color);
+  padding: 5px 0;
+  }
+
 
 h1{font-size: 3rem;}
 
@@ -325,3 +349,10 @@ nav a:hover {
       background-color: var(--third-color);
       border-radius: 25px;
        }
+
+       #weather_section {
+        display: grid;
+        grid-template-areas:  
+        "weather" "forecast";
+        border-style: double;
+        }

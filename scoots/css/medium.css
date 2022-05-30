@@ -16,24 +16,23 @@
     }
     
     .parallax {
+    padding: 2px;
     height: 400px;
     }
     
 
-#weather_section {
+/* #weather_section {
     display: grid;
     grid-template-areas:  
     "weather" "forecast";
     border-style: double;
-    }
+    } */
 
 .contact_map{
     display: flex;
     justify-items: center;
     
     }
-
-
 
 }
 
