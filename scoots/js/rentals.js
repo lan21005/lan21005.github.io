@@ -9,7 +9,6 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    //uses json() method
     console.table(jsonObject); // temporary checking for valid response and data parsing
     const rental_types = jsonObject["rental_types"];
     rental_types.forEach(displayrental_types);
@@ -62,6 +61,4 @@ function displayrental_types(rental_types) {
     document.querySelector("div.cards").appendChild(card);
     document.querySelector("div.cards").appendChild(document.createElement("br"));
     document.querySelector("div.cards").appendChild(document.createElement("hr"));
-
-    
   }
