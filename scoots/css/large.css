@@ -36,7 +36,20 @@
       background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/scoots/images/cozumel.webp");
     }
     
+    .parallax button {
+      justify-self: center;
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 2;
+      grid-row-end: 2;
+    }
     
+    button:hover {
+      color: #FFAD05;
+      background-color: #FFF;
+      padding: 10px;
+      box-shadow: 5px 10px 8px #012A36;
+    }    
 
 
 
