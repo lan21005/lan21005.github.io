@@ -249,3 +249,12 @@ nav a:hover {
 .parallax1 {
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.068)), url("/scoots/images/cozumel.webp");
 }
+
+#welcome-image {
+  float: left;
+  margin-right: 25px;
+  display: block;
+  box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;
+  border-radius: 50%;
+  flex-shrink: 1;
+  }
