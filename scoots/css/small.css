@@ -308,3 +308,20 @@ nav a:hover {
       color: #fff;
       border-radius: 50px;
       }
+
+      .contact_map{
+        display: grid;
+        justify-items: center;
+        max-width: 400px;
+
+
+      }
+      
+      .contact_single_map {
+            justify-items: center;
+      margin: 5px;
+      margin: 2px;
+      padding: 0.5rem;
+      background-color: var(--third-color);
+      border-radius: 25px;
+       }

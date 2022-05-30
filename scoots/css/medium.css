@@ -27,6 +27,14 @@
     border-style: double;
     }
 
+.contact_map{
+    display: flex;
+    justify-items: center;
+    
+    }
+
+
+
 }
 
 
