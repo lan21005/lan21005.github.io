@@ -12,7 +12,6 @@
   }
   
 header, footer {
-  display: flex;
   background-color: var(--fourth-color);
   justify-content: center;
   align-items: center;
@@ -21,6 +20,14 @@ header, footer {
   padding: 1rem;
   font-family: var(--primary-font);
   border-radius: 15px;
+}
+
+header {
+  display: flex;
+  }
+
+footer{
+  display: grid;
 }
 
 h1{font-size: 3rem;}
@@ -34,7 +41,7 @@ h1,h2,h3,h4,h5,h6{
 p{
   font-family: var(--primary-font);
   font-weight: normal;
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.5;
   margin: 0;
 }
@@ -127,7 +134,6 @@ nav a:hover {
 }
 
 .lower {
-  /* make .lower have content spread across the section */
   display: flex;
   flex-direction: row; 
   justify-content: center;
@@ -138,6 +144,8 @@ nav a:hover {
   padding: 0.5rem;
   background-color: var(--third-color);
   border-radius: 25px;
+  /* overflow: hidden; */
+
 }
 
 #rental_agreement {

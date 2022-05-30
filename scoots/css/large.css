@@ -21,7 +21,22 @@
   
 
 
-
+    .parallax {
+      position: initial;
+      height: 500px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: grid;
+      justify-items: center;
+    }
+    
+    .parallax1 {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/scoots/images/cozumel.webp");
+    }
+    
+    
 
 
 
