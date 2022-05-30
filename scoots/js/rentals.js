@@ -60,4 +60,8 @@ function displayrental_types(rental_types) {
     
      // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector("div.cards").appendChild(card);
+    document.querySelector("div.cards").appendChild(document.createElement("br"));
+    document.querySelector("div.cards").appendChild(document.createElement("hr"));
+
+    
   }
