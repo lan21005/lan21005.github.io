@@ -150,60 +150,43 @@ forecastRequest.onload = function () {
     }
   }
 
+  // Day One
   document.getElementById("day-1").innerHTML = findDayOfWeek(dayOne.dt_txt);
-  document.getElementById("day-2").innerHTML = findDayOfWeek(dayTwo.dt_txt);
-  document.getElementById("day-3").innerHTML = findDayOfWeek(dayThree.dt_txt);
-  document.getElementById("day-4").innerHTML = findDayOfWeek(dayFour.dt_txt);
-  document.getElementById("day-5").innerHTML = findDayOfWeek(dayFive.dt_txt);
-
   document.getElementById("high-1").innerHTML = dayOne.main.temp_max + "&deg;";
-  document.getElementById("high-2").innerHTML = dayTwo.main.temp_max + "&deg;";
-  document.getElementById("high-3").innerHTML =
-    dayThree.main.temp_max + "&deg;";
-  document.getElementById("high-4").innerHTML = dayFour.main.temp_max + "&deg;";
-  document.getElementById("high-5").innerHTML = dayFive.main.temp_max + "&deg;";
-
-  document
-    .getElementById("img-1")
-    .setAttribute("src", imageWeather + dayOne.weather[0].icon + ".png");
-  document
-    .getElementById("img-2")
-    .setAttribute("src", imageWeather + dayTwo.weather[0].icon + ".png");
-  document
-    .getElementById("img-3")
-    .setAttribute("src", imageWeather + dayThree.weather[0].icon + ".png");
-  document
-    .getElementById("img-4")
-    .setAttribute("src", imageWeather + dayFour.weather[0].icon + ".png");
-  document
-    .getElementById("img-5")
-    .setAttribute("src", imageWeather + dayFive.weather[0].icon + ".png");
-
-  document
-    .getElementById("img-1")
-    .setAttribute("alt", dayOne.weather[0].description);
-  document
-    .getElementById("img-2")
-    .setAttribute("alt", dayOne.weather[0].description);
-  document
-    .getElementById("img-3")
-    .setAttribute("alt", dayOne.weather[0].description);
-  document
-    .getElementById("img-4")
-    .setAttribute("alt", dayOne.weather[0].description);
-  document
-    .getElementById("img-5")
-    .setAttribute("alt", dayOne.weather[0].description);
-
+  document.getElementById("img-1").setAttribute("src", imageWeather + dayOne.weather[0].icon + ".png");
+  document.getElementById("img-1").setAttribute("alt", dayOne.weather[0].description);
   document.getElementById("condition-1").innerHTML = dayOne.weather[0].main;
-  document.getElementById("condition-2").innerHTML = dayTwo.weather[0].main;
-  document.getElementById("condition-3").innerHTML = dayThree.weather[0].main;
-  document.getElementById("condition-4").innerHTML = dayFour.weather[0].main;
-  document.getElementById("condition-5").innerHTML = dayFive.weather[0].main;
-
   document.getElementById("low-1").innerHTML = dayOne.main.temp_min + "&deg;";
+
+  // Day Two
+  document.getElementById("day-2").innerHTML = findDayOfWeek(dayTwo.dt_txt);
+  document.getElementById("high-2").innerHTML = dayTwo.main.temp_max + "&deg;";
+  document.getElementById("img-2").setAttribute("src", imageWeather + dayTwo.weather[0].icon + ".png");
+  document.getElementById("img-2").setAttribute("alt", dayOne.weather[0].description);
+  document.getElementById("condition-2").innerHTML = dayTwo.weather[0].main;
   document.getElementById("low-2").innerHTML = dayTwo.main.temp_min + "&deg;";
+
+  // Day Three
+  document.getElementById("day-3").innerHTML = findDayOfWeek(dayThree.dt_txt);
+  document.getElementById("high-3").innerHTML = dayThree.main.temp_max + "&deg;";
+  document.getElementById("img-3").setAttribute("src", imageWeather + dayThree.weather[0].icon + ".png");
+  document.getElementById("img-3").setAttribute("alt", dayOne.weather[0].description);
+  document.getElementById("condition-3").innerHTML = dayThree.weather[0].main;
   document.getElementById("low-3").innerHTML = dayThree.main.temp_min + "&deg;";
+
+  // Day Four
+  document.getElementById("day-4").innerHTML = findDayOfWeek(dayFour.dt_txt);
+  document.getElementById("high-4").innerHTML = dayFour.main.temp_max + "&deg;";
+  document.getElementById("img-4").setAttribute("src", imageWeather + dayFour.weather[0].icon + ".png");
+  document.getElementById("img-4").setAttribute("alt", dayOne.weather[0].description);
+  document.getElementById("condition-4").innerHTML = dayFour.weather[0].main;
   document.getElementById("low-4").innerHTML = dayFour.main.temp_min + "&deg;";
+
+  // Day Five
+  document.getElementById("day-5").innerHTML = findDayOfWeek(dayFive.dt_txt);
+  document.getElementById("high-5").innerHTML = dayFive.main.temp_max + "&deg;";
+  document.getElementById("img-5").setAttribute("src", imageWeather + dayFive.weather[0].icon + ".png");
+  document.getElementById("img-5").setAttribute("alt", dayOne.weather[0].description);  
+  document.getElementById("condition-5").innerHTML = dayFive.weather[0].main;
   document.getElementById("low-5").innerHTML = dayFive.main.temp_min + "&deg;";
-};
+}
