@@ -1,0 +1,468 @@
+:root {
+  --primary-color: #caf0f8;
+  --secondary-color: #827c7c;
+}
+
+html {
+  background-color: var(--primary-color);
+}
+
+header,
+footer {
+  background-color: #023e8a;
+  padding: 5px;
+  color: white;
+  border: black solid 2px;
+  text-align: center;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  line-height: 2rem;
+  margin: auto;
+}
+
+main {
+  border-bottom: 2px solid black;
+  margin: 10px;
+  background-color: white;
+  border-radius: 10px;
+  border: black solid 2px;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1px;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-size: 1em;
+  padding-top: 20px;
+  padding-right: 35px;
+  font-family: "Mukta", sans-serif;
+}
+
+h6 {
+  font-size: 1em;
+  font-weight: 200;
+  padding-top: 20px;
+  padding-right: 35px;
+  font-family: "Mukta", sans-serif;
+}
+
+.headings {
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+  font-size: 1em;
+  padding: 10px;
+}
+
+.motto {
+  font-size: 0.7em;
+}
+
+.cityname {
+  display: block;
+  font-size: 2em;
+  font-family: "Mukta", sans-serif;
+  padding-top: 20px;
+  padding-right: 35px;
+  align-content: center;
+  text-align: center;
+}
+
+.hero,
+.forecast,
+.article {
+  display: block;
+  border-style: double;
+  margin: 10px auto;
+  padding: 10px;
+  /* background-color: #eee; */
+  color: #444;
+  font-style: oblique;
+}
+
+#info {
+  display: block;
+  border-style: double;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #eee;
+  color: #444;
+  font-style: oblique;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  color: #444;
+  background-color: #eee;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  padding: 1rem;
+  border-style: double;
+  overflow: hidden;
+}
+
+#banner {
+  background-color: yellow;
+  color: #023e8a;
+  font-size: 1.5em;
+  padding: 10px;
+  text-align: center;
+  font-family: "Mukta", sans-serif;
+}
+
+ul {
+  list-style: square;
+}
+
+footer a,
+footer a:visited,
+li a:visited {
+  color: lightskyblue;
+}
+
+#primarynav a#current-page {
+  background-color: grey;
+  color: whitesmoke;
+  box-shadow: 0 0 10px var(--main-color);
+  font-style: oblique;
+  font-weight: bolder;
+}
+
+.article_img {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-style: double;
+  align-content: center;
+  text-align: center;
+}
+
+.weather_img {
+  max-width: 10%;
+  height: auto;
+  overflow: hidden;
+  border-style: double;
+  align-content: center;
+  text-align: center;
+}
+
+table {
+  background-color: lightgrey;
+  margin: 1rem;
+  border: solid black;
+  color: black;
+  height: auto;
+  overflow: hidden;
+  border-style: double;
+  align-content: center;
+  text-align: center;
+  width: 50%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+  overflow: hidden;
+  font-size: .75rem;
+}
+
+th {
+  background-color: lightgreen;
+  color: #fff;
+  padding: 1.5rem;
+  font-size: 1rem;
+  border: solid black 0.1rem;
+}
+
+td {
+  border: dashed black 0.1rem;
+  padding: 0.2rem;
+}
+
+td:hover {
+  background-color: #eee;
+  font-size: larger;
+}
+
+th:hover{
+  background-color: rgb(252, 158, 158);
+  font-size: larger;
+}
+
+section.overview {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr;
+  color: black;
+  padding-left: 15px;
+  font-weight: 400;
+  background-color: #eee;
+  border-style: double;
+  overflow: hidden;
+}
+
+section.overview h4 {
+  grid-column: span 3;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+div.hero {
+  z-index: 1;
+  position: relative;
+  min-height: 250px;
+  background-image: url("../images/wdd230_image_franklinOriginal.webp");
+  background-size: cover;
+  background-position: left bottom;
+  overflow: hidden;
+  border-style: double;
+}
+
+div.hero section {
+  top: 20px;
+  left: 20px;
+  width: 325px;
+  position: absolute;
+  height: calc(100% - 40px);
+  background: rgba(255, 255, 255, 0.3);
+  background-image: linear-gradient(
+    -160deg,
+    rgba(255, 255, 255, 0.4) 35%,
+    rgba(100, 100, 100, 0.9)
+  );
+  border-style: double;
+}
+
+/********************/
+/* Hamburger button */
+/********************/
+
+nav {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+  border-radius: 10px;
+}
+nav ul li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+  background-color: #373737;
+  transition: 0.5s;
+}
+
+nav ul {
+  display: none;
+}
+nav ul.open {
+  display: block;
+}
+
+#hamburgerbtn span:nth-child(1) {
+  display: block;
+  align-items: center;
+}
+#hamburgerbtn span:nth-child(2) {
+  display: none;
+}
+
+#hamburgerbtn.open span:nth-child(1) {
+  display: none;
+}
+#hamburgerbtn.open span:nth-child(2) {
+  display: block;
+}
+
+nav button {
+  color: #536878;
+  background-color: #f6f1ea;
+  transition: 0.5s;
+  border: none;
+  font-size: 2rem;
+}
+
+nav a:hover {
+  background-color: #f2f3ae;
+  color: #36454f;
+}
+
+.gallery {
+  margin-bottom: 1rem;
+  display: block;
+  padding: 1rem;
+  margin: auto;
+  text-align: left !important;
+  border: solid black 1px;
+  background-color: lightgrey;
+}
+
+figcaption {
+  font-size: 0.75rem;
+  text-align: center;
+  background-color: white;
+  border-style: double;
+  margin: 5px;
+}
+
+.gallery picture {
+  justify-self: center;
+  padding: 1rem;
+}
+
+picture img {
+  width: 75%;
+  border-style: double;
+}
+
+#stormcenter_thanks,
+#received_thanks {
+  display: block;
+  margin: auto;
+  align-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Mukta", sans-serif;
+}
+
+#danger {
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Mukta", sans-serif;
+  display: block;
+  margin: auto;
+  align-content: center;
+  text-align: center;
+  background-color: rgb(200, 0, 250);
+}
+
+.logo,
+.map {
+  max-width: 175px;
+  border-radius: 5%;
+  border-style: double;
+}
+
+#table_forecast{
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+  border-style: double;
+  font-size: .75rem;
+  overflow: hidden;
+}
+ 
+
+/* Index */
+.home-content-wrap {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 15px;
+  display: grid;
+  grid-template-areas:
+    "item2 item2 item2"
+    "item3 item3 item3"
+    "item4 item4 item4";
+  grid-gap: 15px;
+}
+
+.item2 {
+  grid-area: item2;
+}
+.item3 {
+  grid-area: item3;
+}
+.item4 {
+  grid-area: item4;
+}
+
+iframe {
+  width: 95%;
+  height: 30rem;
+  border: none;
+}
+
+.town-data {
+  background-color: #5995ed;
+  padding: 1rem;
+  border-radius: 25px;
+}
+
+.town-data img {
+  max-width: 85%;
+  box-shadow: 1rem 1rem 0.5rem #044389;
+  border-style: double;
+}
+
+.spotlight {
+  border: solid #ffad05 1px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #5995ed;
+  display: grid;
+  grid-template-columns: 1 2 3;
+  grid-template-rows: 1 2 3 4;
+}
+
+.spotlight button {
+  grid-column-start: 2;
+  grid-row-start: 4;
+}
+
+.spotlight img {
+  width: 75%;
+  margin: 1rem;
+  border-radius: 5px;
+  border-style: double;
+  box-shadow: 2rem 2rem 1rem #044389;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -25px;
+  color: black;
+  border-radius: 5px;
+}
+
+.next {
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+.prev {
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(4, 67, 137, 8);
+}
