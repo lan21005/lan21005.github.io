@@ -22,8 +22,8 @@
 
   <!-- Scripts -->
   <script defer src="js/scripts.js"></script>
+  <script defer src="js/windchill.js"></script>
 </head>
-
 
 <body>
   <header>
@@ -71,41 +71,30 @@
         <form action="reservations.html"><button>Reserve my Vacation</button></form>
       </div>
     </section>
-
-    <h2>Summary Information about all the types of Rentals</h2>
-    <p>
-    <h3>Type of Rentals</h3>
-
-    Honda Motor Scooters
-    Honda Metropolitan (49cc)—1 person
-    Honda Dio (110cc)—2 person
-    Honda PCX150 (149cc)—2 person
-    ATV Side-by-Side
-    Honda Pioneer 1000
-    Jeep Rentals
-    4-door Jeep Wrangler—manual with A/C—5 people max
-    2-door Jeep Wrangler—open air—manual—4 people max
-    </p>
-
-    <h3>Information and Services</h3>
-    <p>
-
-
-    </p>
-
-    A $50 security deposit is required to confirm reservations.
-    A valid drivers license is required in hand at time of rental.
-    No one under 12 years of age is allowed to ride on the scooters.
-    Fuel charge not included.
-    Unlimited mileage.
-    Liability insurance is free of charge.
-    Reservations rate requires 24 hour prior notification.
-    Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.
-    Payment via Google Pay, cash, credit card, debit card, or PayPal.
-    Rentals may be returned to either location.
+<section id="weather_section">
+    <div id="weather">
+      <h2>Current Weather</h2>
+      <figure>
+        <img src="/scoots/images/placeholder.webp" alt="" id="weathericon" />
+        <figcaption id="weatherdesc"></figcaption>
+      </figure>
+      <p>Temperature: <span id="temp"></span>&deg;F</p>
+      <p>
+        Wind Speed: <span id="speed"></span> mph <br />Wind Chill:
+        <span id="wchill"></span> <br />Humidity: <span id="humid"></span>%
+      </p>
+      </div>
+      <div id="forecast">
+      <h2>Forecast</h2>
+      <p>5 Day Forecasted Temperatures: <span id="forecasttemp"></span>&deg;F</p>
+      </div>
+      </section>
+    <hr>
     </p>
     <img src="images/placeholder.jpg" data-src="images/rental_prices_overview.webp" alt="placeholder"
       class="lazyload" />
+</div>  
+
 
     <article class="lower">
       <picture>

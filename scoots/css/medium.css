@@ -20,16 +20,17 @@
     }
     
 
-
-
-
-
-
-
-
-
-
-
-
+#weather_section {
+    display: grid;
+    grid-template-areas:  
+    "weather" "forecast";
+    border-style: double;
+    }
 
 }
+
+
+
+
+
+
