@@ -149,3 +149,23 @@ nav a:hover {
 #logo {
   border-radius: 50px;
 }
+
+/* .tour{
+  display: flex;
+  align-content: space-around;
+  text-align: center;
+  margin: 5px;
+  max-width: 900px;
+  margin: 2PX;
+  padding: 0.5rem;
+  background-color: var(--third-color);
+  border-radius: 25px;
+
+} */
+
+.tour_img
+{ border-radius: 50px;
+  border-style: double;
+  width: 75%;
+  height: auto;
+}
