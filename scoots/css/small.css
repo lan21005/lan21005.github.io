@@ -5,7 +5,7 @@
   --fourth-color: #dd7ffa;
   --primary-font: "Mukta", sans-serif;
   --secondary-font: "Outfit", sans-serif;
-  max-width: 1000px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0;
   margin-top: 20px;
@@ -236,7 +236,7 @@ nav a:hover {
 
 .parallax {
   position: static;
-  height: 300px;
+  height: 400px;
   background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
