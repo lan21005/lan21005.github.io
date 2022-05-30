@@ -205,6 +205,10 @@ section.overview {
   grid-template-columns: 3fr 2fr 2fr;
   color: black;
   padding-left: 15px;
+  font-weight: 400;
+  background-color: #eee;
+  border-style: double;
+  overflow: hidden;
 }
 
 section.overview h4 {
@@ -350,10 +354,21 @@ picture img {
 
 .logo,
 .map {
-  max-width: 300px;
+  max-width: 175px;
   border-radius: 5%;
   border-style: double;
 }
+
+#table_forecast{
+/* responsive table in size */
+  width: 100%;
+  margin: auto;
+  border-collapse: collapse;
+  border-style: double;
+  font-size: .75rem;
+  overflow: hidden;
+}
+ 
 
 /* Index */
 .home-content-wrap {
