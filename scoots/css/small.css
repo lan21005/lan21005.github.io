@@ -1,10 +1,17 @@
 :root {
-    --primary-color: #74d3f0;
-    --secondary-color: #f5ec9e;
-    --third-color: #f8a460;
-    --fourth-color: #dd7ffa;
-    --primary-font: "Mukta", sans-serif;
-    --secondary-font: "Outfit", sans-serif;
+  --primary-color: #74d3f0;
+  --secondary-color: #f5ec9e;
+  --third-color: #f8a460;
+  --fourth-color: #dd7ffa;
+  --primary-font: "Mukta", sans-serif;
+  --secondary-font: "Outfit", sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
   }
   
   html {
