@@ -259,6 +259,8 @@ nav a:hover {
   flex-shrink: 1;
   }
 
+
+
   section .rentalcard{
     background-color: var(--secondary-color);
     margin: 5px;
@@ -295,13 +297,7 @@ nav a:hover {
       margin: 0;
       }
   
-    .rentalcard h3 {
-      font-family: var(--secondary-font);
-      font-weight: 800;
-      text-decoration: underline;
-      }
-  
-    .rentalcard a {
+     .rentalcard a {
       background-color: var(--secondary-color);
       color: #36454f;
       border-radius: 50px;
@@ -312,27 +308,3 @@ nav a:hover {
       color: #fff;
       border-radius: 50px;
       }
-  
-    .rentalcard p {
-      font-size: 1rem;
-      line-height: 1.5;
-      }
-  
-    .rentalcard p {
-      margin: 0;
-      }
-  
-    .rentalcard h4 {
-      font-size: 1rem;
-      line-height: 1.5;
-      }
-  
-    .rentalcard h5 {
-      font-size: 1rem;
-      line-height: 1.5;
-      }
-  
-    .rentalcard h6 {
-      font-size: 1rem;
-      line-height: 1.5
-  }
