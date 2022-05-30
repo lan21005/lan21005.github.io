@@ -190,9 +190,3 @@ forecastRequest.onload = function () {
   document.getElementById("condition-5").innerHTML = dayFive.weather[0].main;
   document.getElementById("low-5").innerHTML = dayFive.main.temp_min + "&deg;";
 };
-
-// Under the id=upcoming_events, take the events array from the towndata.json file and display the events in a list.
-// The events array contains objects with the following properties:
-// location: The location of the event
-// description: A description of the event
-

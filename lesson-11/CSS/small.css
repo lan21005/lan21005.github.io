@@ -360,8 +360,7 @@ picture img {
 }
 
 #table_forecast{
-/* responsive table in size */
-  width: 100%;
+  width: 90%;
   margin: auto;
   border-collapse: collapse;
   border-style: double;
