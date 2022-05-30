@@ -23,7 +23,8 @@
 
     .parallax {
       position: initial;
-      height: 500px;
+      /* height: 500px; */
+      width: 100%;
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
@@ -33,7 +34,7 @@
     }
     
     .parallax1 {
-      background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/scoots/images/cozumel.webp");
+      background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.068)), url("/scoots/images/cozumel.webp");
     }
     
     .parallax button {
@@ -44,7 +45,7 @@
       grid-row-end: 2;
     }
     
-    button:hover {
+    .parallax button:hover {
       color: #FFAD05;
       background-color: #FFF;
       padding: 10px;
