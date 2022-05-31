@@ -463,5 +463,5 @@ iframe {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(4, 67, 137, 8, 0.5);
+  background-color: black;
 }
