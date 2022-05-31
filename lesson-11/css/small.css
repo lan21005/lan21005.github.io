@@ -84,8 +84,7 @@ h6 {
   border-style: double;
   margin: 10px auto;
   padding: 10px;
-  /* background-color: #eee; */
-  color: #444;
+  color: black;
   font-style: oblique;
 }
 
