@@ -135,7 +135,7 @@ li a:visited {
 }
 
 #primarynav a#current-page {
-  background-color: grey;
+  background-color: rgb(140, 49, 245);
   color: whitesmoke;
   box-shadow: 0 0 10px var(--main-color);
   font-style: oblique;
@@ -179,7 +179,7 @@ table {
 
 th {
   background-color: lightgreen;
-  color: #fff;
+  color: black;
   padding: 1.5rem;
   font-size: 1rem;
   border: solid black 0.1rem;
