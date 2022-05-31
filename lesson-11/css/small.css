@@ -415,8 +415,8 @@ iframe {
   margin: 0 auto;
   background-color: #5995ed;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr ; 
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr;
 }
 
 .spotlight button {
