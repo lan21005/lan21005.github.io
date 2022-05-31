@@ -179,7 +179,7 @@ table {
 
 th {
   background-color: lightgreen;
-  color: black;
+  color: rgb(10, 10, 10);
   padding: 1.5rem;
   font-size: 1rem;
   border: solid black 0.1rem;
