@@ -45,6 +45,18 @@ footer{
   border-radius: 15px;
   }
 
+  footer li, footer li a, footer p, footer p a {
+    color: black;
+     border-radius: 15px;
+    text-decoration: none;
+    line-height: 1.25em;
+    }
+
+footer a:visited {
+  color: black;
+  font-style: italic;
+  font: bold;
+  }
 
 h1{font-size: 3rem;}
 
