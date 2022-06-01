@@ -128,7 +128,6 @@ nav button {
 
 nav a:hover {
   background-color: var(--secondary-color);
-  /* #f2f3ae; */
   color: #36454f;
   border-radius: 50px;
 }
