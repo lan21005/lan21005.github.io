@@ -1,62 +1,55 @@
 @media only screen and (min-width: 65rem) {
-    body {
-      max-width: 1500px; 
-    }
-    nav button {
-      display: none;
-    }
-  
-    nav ul#primarynav {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr;
-      font-size: 1em;
-      padding: 10px;
-    }
-  
-    nav ul li a {
-      border: none;
-      border-right: 1px solid rgba(0, 0, 0, 0);
-    }
-  
+  body {
+    max-width: 1500px;
+  }
+  nav button {
+    display: none;
+  }
 
+  nav ul#primarynav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    font-size: 1em;
+    padding: 10px;
+  }
 
-    .parallax {
-      position: initial;
-      width: 100%;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: grid;
-      justify-items: center;
-    }
-    
-    .parallax1 {
-      background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.068)), url("/scoots/images/cozumel.webp");
-    }
-    
-    .parallax button {
-      justify-self: center;
-      grid-column-start: 1;
-      grid-column-end: 1;
-      grid-row-start: 2;
-      grid-row-end: 2;
-    }
-    
-    .parallax button:hover {
-      color: #FFAD05;
-      background-color: #FFF;
-      padding: 10px;
-      box-shadow: 5px 10px 8px #012A36;
-    }    
+  nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0);
+  }
 
+  .parallax {
+    position: initial;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    justify-items: center;
+  }
 
+  .parallax1 {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.068)
+      ),
+      url("/scoots/images/cozumel.webp");
+  }
 
+  .parallax button {
+    justify-self: center;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
 
-
-
-
-    
-
+  .parallax button:hover {
+    color: #ffad05;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #012a36;
+  }
 }

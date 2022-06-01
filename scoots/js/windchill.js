@@ -10,7 +10,7 @@
 */
 const apiURL =
   "https://api.openweathermap.org/data/2.5/weather?id=3530103&appid=e681baa04b7db3d01b4b4bb6cfe8420a&units=imperial";
-  fetch(apiURL)
+fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
@@ -48,23 +48,25 @@ const apiURL =
   });
 
 // display and label a forecasted temperature that is five days from the current date at noon, label each day with the day of the week
-const apiURL2 ="https://api.openweathermap.org/data/2.5/forecast?lat=20.508329&lon=-86.945831&appid=e681baa04b7db3d01b4b4bb6cfe8420a&units=imperial"
+const apiURL2 =
+  "https://api.openweathermap.org/data/2.5/forecast?lat=20.508329&lon=-86.945831&appid=e681baa04b7db3d01b4b4bb6cfe8420a&units=imperial";
 fetch(apiURL2)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
-    
-    const forecasttemp = jsObject.list.filter(x => x.dt_txt.includes("12:00:00"));
+
+    const forecasttemp = jsObject.list.filter((x) =>
+      x.dt_txt.includes("12:00:00")
+    );
     console.log(forecasttemp);
-    const forecasttemptemp = forecasttemp.map(x => x.main.temp);
+    const forecasttemptemp = forecasttemp.map((x) => x.main.temp);
     console.log(forecasttemptemp);
-    const forecasttemptempf = forecasttemptemp.map(x => x.toFixed(1));
+    const forecasttemptempf = forecasttemptemp.map((x) => x.toFixed(1));
     console.log(forecasttemptempf);
-    const forecasttemptempfstring = forecasttemptempf.map(x => x.toString());
+    const forecasttemptempfstring = forecasttemptempf.map((x) => x.toString());
     console.log(forecasttemptempfstring);
     const forecasttemptempfstringjoin = forecasttemptempfstring.join(", ");
     console.log(forecasttemptempfstringjoin);
-    document.querySelector("#forecasttemp").innerHTML = forecasttemptempfstringjoin;
-    
+    document.querySelector("#forecasttemp").innerHTML =
+      forecasttemptempfstringjoin;
   });
-
