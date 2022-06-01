@@ -25,117 +25,135 @@
     <script defer src="js/scripts.js"></script>
   </head>
 
-
   <body>
     <main>
-    <header>
-      <div id="heading">
-        <img id="logo" src="images/logo.webp" alt="Logo" />
-      </div>
-      <br />
-      <div id="header_links">
-        <div id="nav">
-          <nav>
-            <button id="hamburgerbtn">
-              <span>&#9776;</span><span>X</span>
-            </button>
-            <ul id="primarynav">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="rentals.html">Rentals</a></li>
-              <li><a href="reservations.html">Reservations</a></li>
-              <li><a href="tours.html">Tours</a></li>
-              <li><a id="current-page" href="#">Contact</a></li>
-            </ul>
-          </nav>
+      <header>
+        <div id="heading">
+          <img id="logo" src="images/logo.webp" alt="Logo" />
         </div>
-</div>
-</header>
+        <br />
+        <div id="header_links">
+          <div id="nav">
+            <nav>
+              <button id="hamburgerbtn">
+                <span>&#9776;</span><span>X</span>
+              </button>
+              <ul id="primarynav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a id="current-page" href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
 
+      <h1>Contact Us</h1>
+      <p>
+        Please come to either of our locations for Walk-In rentals or any
+        questions you have.
+      </p>
 
-       <h1> Contact Us</h1>
-       <p>Please come to either of our locations for Walk-In rentals or any questions you have.</p>
+      <div class="contact_map">
+        <div class="contact_single_map">
+        <img src="/scoots/images/playadelcarmen.webp" width="250" height="250">
+          <h2>Playa Del Carmen</h2> <br>
+        </div>
+        <div class="contact_single_map">
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.741031339428!2d-86.97695068414568!3d20.475827011797502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5748bac98d29%3A0xec697a2a774f7a00!2sPuerta%20Maya%20Cruise%20Ship%20Terminal!5e0!3m2!1sen!2sus!4v1653915212347!5m2!1sen!2sus"
+            width="250"
+            height="250"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <h2>Terminal Puerta Maya</h2>
+        </div>
+      </div>
 
-    <div class="contact_map">
-      <picture class="contact_single_map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.8835591643387!2d-86.9537679724786!3d20.510999073179196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cf3a0ece15%3A0x9216e3c2b55e5526!2sPlaya%20del%20Carmen-Cozumel%20Ferry%20Dock!5e0!3m2!1sen!2sus!4v1653915643439!5m2!1sen!2sus" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-      <figcaption><h2>Playa Del Carmen</h2></figcaption>  
-      </picture>
-        <picture class="contact_single_map">
-        <iframe class="map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.741031339428!2d-86.97695068414568!3d20.475827011797502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5748bac98d29%3A0xec697a2a774f7a00!2sPuerta%20Maya%20Cruise%20Ship%20Terminal!5e0!3m2!1sen!2sus!4v1653915212347!5m2!1sen!2sus" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <figcaption><h2>Terminal Puerta Maya</h2></figcaption>  
-      </picture>
-      </div>  
-      
-        <h2> Please Contact Us</h2>
-          <div class="contact">
-            <form method="get" action="confirmation.html">
-              <fieldset>
-                <legend>Contact us</legend>
-                <label class="top"
-                  >First Name*<input
-                    type="text"
-                    name="fname"
-                    placeholder="First"
-                    required
-                /></label><br>
-                <label class="top"
-                  >Last Name*<input
-                    type="text"
-                    name="lname"
-                    placeholder="Last"
-                    required
-                /></label><br>
-                <label class="top"
-                  >Email*<input
-                    type="email"
-                    name="email"
-                    placeholder="username@email.com"
-                    required
-                /></label><br>
-               <label class="top">
-                 Questions or comments<br /><textarea
-                    id="description"
-                    name="bdescription"
-                  >
-                  </textarea>
-                </label>
-              <br>
-              <input type="submit" class="submitBtn" value="Contact Us" />
-            </fieldset>
-            </form>
-
+      <h2>Please Contact Us</h2>
+      <div class="contact">
+        <form method="get" action="confirmation.html">
+          <fieldset>
+            <legend>Contact us</legend>
+            <label class="top"
+              >First Name*<input
+                type="text"
+                name="fname"
+                placeholder="First"
+                required /></label
+            ><br />
+            <label class="top"
+              >Last Name*<input
+                type="text"
+                name="lname"
+                placeholder="Last"
+                required /></label
+            ><br />
+            <label class="top"
+              >Email*<input
+                type="email"
+                name="email"
+                placeholder="username@email.com"
+                required /></label
+            ><br />
+            <label class="top">
+              Questions or comments<br /><textarea
+                id="description"
+                name="bdescription"
+              >
+              </textarea>
+            </label>
+            <br />
+            <input type="submit" class="submitBtn" value="Contact Us" />
+          </fieldset>
+        </form>
       </div>
       <footer>
         <ul>
-        <li>
-          Email:
-          <a class="email" href="mailto:contact@scoots.com" target="_blank">Contact@Scoots.com</a>
-        </li>
-        <li>
-          Phone:<a class="phone" href="tel:0115211234567890">011-52-1-123-456-7890</a>
-        </li>
-        <li>Location:
-          <a class="location" href="https://goo.gl/maps/yTuQbM2AbrN5jAMQ6">See on a map!</a>
-        </li>
-        <li>Find us on
-          <a class="facebook" href="https://www.facebook.com/">Facebook</a>
-        </li>
-        <li>Find us on
-          <a class="twitter" href="https://www.twitter.com/">Twitter</a>
-        </li>
-      </ul>
-    <br>
-    <p>&copy;<span id="year">All Rights Reserved</span> .:|:.
-      <a href="https://lan21005.github.io/">Jon Lanenga</a> .:|:. <a href="/scoots/resource.html">Resources Used</a>
-      .:|:.
-      <a href="https://www.byui.edu/online">BYUI Online Learning</a>
-    </p><br />
-    <p>The current date is: <span id="current_date"></span></p>
-    <p id="lastmod">Last modified</p>
-    </footer>
-  </main>
+          <li>
+            Email:
+            <a class="email" href="mailto:contact@scoots.com" target="_blank"
+              >Contact@Scoots.com</a
+            >
+          </li>
+          <li>
+            Phone:<a class="phone" href="tel:0115211234567890"
+              >011-52-1-123-456-7890</a
+            >
+          </li>
+          <li>
+            Location:
+            <a class="location" href="https://goo.gl/maps/yTuQbM2AbrN5jAMQ6"
+              >See on a map!</a
+            >
+          </li>
+          <li>
+            Find us on
+            <a class="facebook" href="https://www.facebook.com/">Facebook</a>
+          </li>
+          <li>
+            Find us on
+            <a class="twitter" href="https://www.twitter.com/">Twitter</a>
+          </li>
+        </ul>
+        <br />
+        <p>
+          &copy;<span id="year">All Rights Reserved</span> .:|:.
+          <a href="https://lan21005.github.io/">Jon Lanenga</a> .:|:.
+          <a href="/scoots/resource.html">Resources Used</a>
+          .:|:.
+          <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+        </p>
+        <br />
+        <p>The current date is: <span id="current_date"></span></p>
+        <p id="lastmod">Last modified</p>
+      </footer>
+    </main>
   </body>
-  
-   </html>
-
-   
+</html>
