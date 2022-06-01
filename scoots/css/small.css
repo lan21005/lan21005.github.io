@@ -55,6 +55,7 @@ footer{
 footer li a, footer p a {
   font-style: italic;
   font: bold;
+  text-decoration: underline;
   }
 
 h1{font-size: 3rem;}
