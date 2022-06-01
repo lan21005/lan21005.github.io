@@ -2,7 +2,7 @@
     "rental_types": [
 {
     "type": "Honda Metro Scooter",
-    "max_persons:": "1 person max limit",
+    "max_persons": "1 person max limit",
     "reservation_half_day": "$20 per half day with reservation",
     "reservation_full_day": "$30 per full day with reservation",
     "walk_in_half_day": "$25 per half day without reservation",
@@ -11,7 +11,7 @@
 },
 {
     "type": "Honda Dio Scooter",
-    "max_persons:": "2 person max limit",
+    "max_persons": "2 person max limit",
     "reservation_half_day": "$30 per half day with reservation",
     "reservation_full_day": "$40 per full day with reservation",
     "walk_in_half_day": "$35 per half day without reservation",
@@ -20,7 +20,7 @@
 },
 {
     "type": "Honda PCX150 Scooter",
-    "max_persons:": "2 person max limit",
+    "max_persons": "2 person max limit",
     "reservation_half_day": "$40 per half day with reservation",
     "reservation_full_day": "$50 per full day with reservation",
     "walk_in_half_day": "$45 per half day without reservation",
@@ -29,7 +29,7 @@
 },
 {
     "type": "Honda Pioneer ATV",
-    "max_persons:": "4 person max limit",
+    "max_persons": "4 person max limit",
     "reservation_half_day": "$50 per half day with reservation",
     "reservation_full_day": "$70 per full day with reservation",
     "walk_in_half_day": "$60 per half day without reservation",
@@ -38,7 +38,7 @@
 },
 {
     "type": "Jeep Wrangler—4 door with a/c",
-    "max_persons:": "5 person max limit",
+    "max_persons": "5 person max limit",
     "reservation_half_day": "$70 per half day with reservation",
     "reservation_full_day": "100 per full day with reservation",
     "walk_in_half_day": "$85 per half day without reservation",
@@ -48,14 +48,12 @@
 },
 {
     "type": "Jeep Wrangler—2 door",
-    "max_persons:": "4 person max limit",
+    "max_persons": "4 person max limit",
     "reservation_half_day": "$60 per half day with reservation",
     "reservation_full_day": "$85 per full day with reservation",
     "walk_in_half_day": "$70 per half day without reservation",
     "walk_in_full_day": "$90 per full day without reservation",
     "imageurl": "https://lan21005.github.io/scoots/images/jeep_wrangler_2door.webp"
 }
-
 ]
-
 }
