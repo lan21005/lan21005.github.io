@@ -52,8 +52,7 @@ footer{
     line-height: 1.25em;
     }
 
-footer a:visited {
-  color: black;
+footer li a, footer p a {
   font-style: italic;
   font: bold;
   }
